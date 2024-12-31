@@ -18,7 +18,7 @@ const Banner = () => {
             onClick={(e) => {
               e.preventDefault();
               if (window.confirm("This will dial +66956943229. Proceed?")) {
-                window.location.href = "tel:+66956943229";
+                window.location.href = "tel:+656943229";
               }
             }}
           >
@@ -32,7 +32,7 @@ const Banner = () => {
         {/* Right Section */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="/banner/pic-2.jpeg"
+            src="/banner/pic--2.jpeg"
             alt="Banner Image"
             className="rounded-lg shadow-lg max-w-full h-auto"
           />

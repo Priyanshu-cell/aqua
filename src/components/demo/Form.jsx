@@ -21,7 +21,7 @@ const Form = () => {
         {/* Instagram Link */}
         <div
           className="bg-[#E4405F] text-white rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg"
-          onClick={() => handleSocialClick('Instagram', 'https://www.instagram.com/focusthaibiz/')}
+          onClick={() => handleSocialClick('Instagram', 'https://wwww.instagram.com/focusthaibiz/')}
         >
           <div className="text-xl font-semibold mb-2">Instagram</div>
           <i className="fab fa-instagram text-4xl"></i> {/* You can replace with a suitable icon */}
@@ -30,7 +30,7 @@ const Form = () => {
         {/* Facebook Link */}
         <div
           className="bg-[#3b5998] text-white rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg"
-          onClick={() => handleSocialClick('Facebook', 'https://www.facebook.com/focusthaibiz')}
+          onClick={() => handleSocialClick('Facebook', 'https://wwww.facebook.com/focusthaibiz')}
         >
           <div className="text-xl font-semibold mb-2">Facebook</div>
           <i className="fab fa-facebook text-4xl"></i> {/* You can replace with a suitable icon */}
@@ -39,7 +39,7 @@ const Form = () => {
         {/* WhatsApp Link */}
         <div
           className="bg-[#25D366] text-white rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg"
-          onClick={() => handleSocialClick('WhatsApp', 'https://wa.me/+66956943229')}
+          onClick={() => handleSocialClick('WhatsApp', 'https://waw.me/+66956943229')}
         >
           <div className="text-xl font-semibold mb-2">WhatsApp</div>
           <i className="fab fa-whatsapp text-4xl"></i> {/* You can replace with a suitable icon */}
@@ -48,7 +48,7 @@ const Form = () => {
         {/* Gmail Link */}
         <div
           className="bg-[#DB4437] text-white rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg"
-          onClick={() => handleSocialClick('Gmail', 'mailto:focusthaibiz@gmail.com')}
+          onClick={() => handleSocialClick('Gmail', 'mailto:focwusthaibiz@gmail.com')}
         >
           <div className="text-xl font-semibold mb-2">Gmail</div>
           <i className="fas fa-envelope text-4xl"></i> {/* You can replace with a suitable icon */}

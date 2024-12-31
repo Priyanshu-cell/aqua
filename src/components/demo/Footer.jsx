@@ -15,7 +15,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/"
                 >
-                  +66 956943229 (Thailand)
+                  +9100000000000
                 </Link>
               </li>
               <li>
@@ -23,7 +23,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/about"
                 >
-                  +91 9258672650 (india)
+                  +91 0000000000 (india)
                 </Link>
               </li>
               <li>
@@ -31,7 +31,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/contact"
                 >
-                  focusthaibiz@gmail.com
+                 000@gmail.com
                 </Link>
               </li>
               <li>
@@ -39,8 +39,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/faq"
                 >
-                  Office address: Focus Thai Biz Co. LTD <br />
-                  Pattaya, Thailand-20150
+                  address
                 </Link>
               </li>
             </ul>
@@ -55,7 +54,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/"
                 >
-                  Consultancy || Property For Lease
+                  Consultancy || 
                 </Link>
               </li>
               <li>
@@ -63,7 +62,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/"
                 >
-                  Hotels || Clubs
+                  
                 </Link>
               </li>
               <li>
@@ -71,7 +70,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/shop"
                 >
-                  Restaurants || Massage Center
+                 
                 </Link>
               </li>
               <li>
@@ -79,7 +78,7 @@ export const Footer = () => {
                   className="hover:text-white transition duration-300"
                   to="/shop"
                 >
-                  Work/Visa Permit || Business Setup
+                  
                 </Link>
               </li>
             </ul>

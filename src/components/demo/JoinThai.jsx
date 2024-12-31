@@ -17,17 +17,17 @@ const JoinThai = () => {
         {/* Modified image container for responsive design */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           <img
-            src="/new/pic-1.jpg"
+            src="/new/pic--1.jpg"
             alt="Service 1"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />
           <img
-            src="/new/pic-2.png"
+            src="/new/pic--2.png"
             alt="Service 2"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />
           <img
-            src="/new/pic-3.png"
+            src="/new/pic--3.png"
             alt="Service 3"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />

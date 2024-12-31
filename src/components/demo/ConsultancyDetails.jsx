@@ -6,16 +6,16 @@ const ConsultancyDetails = () => {
     <div className="bg-gradient-to-b from-[#1B1F3B] to-[#2C3E50] text-white py-10 px-5 md:px-20">
       {/* Heading */}
       <div className="text-center text-2xl md:text-4xl font-bold mb-10">
-        Consultancy For New Business Setup In Thailand
+        Consultancy 
       </div>
 
       {/* Content Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
         {/* Service Images */}
         {[
-          "/consultancy/focus-thai-1.png",
-          "/consultancy/focus-thai-2.png",
-          "/consultancy/focus-thai-3.png",
+          "/consultancy/focus-thai--1.png",
+          "/consultancy/focus-thai--2.png",
+          "/consultancy/focus-thai--3.png",
         ].map((image, index) => (
           <div
             key={index}
