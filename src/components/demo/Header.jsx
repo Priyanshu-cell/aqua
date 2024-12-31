@@ -21,7 +21,7 @@ const Header = () => {
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#D4AF37]">
-              <Element name="home">Focus-Thai</Element>
+              <Element name="home">Aqua</Element>
             </span>
           </Link>
 
@@ -93,7 +93,7 @@ const Header = () => {
                   smooth={true}
                   className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
                 >
-                  About Us
+                  contact Us
                 </Link>
               </li>
               <li>
@@ -102,13 +102,13 @@ const Header = () => {
                   className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
                 >
                   <a
-                    href="tel:+66956943229"
+                    href="tel:+919999999999"
                     onClick={(e) => {
                       e.preventDefault();
                       if (
-                        window.confirm("This will dial +66956943229. Proceed?")
+                        window.confirm("This will dial +919999999999. Proceed?")
                       ) {
-                        window.location.href = "tel:+66956943229";
+                        window.location.href = "tel:+919999999999";
                       }
                     }}
                   >
