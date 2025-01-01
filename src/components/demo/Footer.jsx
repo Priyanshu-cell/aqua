@@ -3,82 +3,110 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#1B1F3B] text-[#D4AF37] font-semibold">
-      <div className="max-w-screen-xl mx-auto p-8 pt-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Navigation Section */}
+    <footer className="bg-[#1B1F3B] text-[#F0F8FF] font-medium">
+      <div className="max-w-screen-xl mx-auto p-8 pt-12 md:pt-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Contact Information Section */}
           <div>
-            <h2 className="text-lg mb-4">Further information</h2>
-            <ul className="space-y-2">
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Contact Us</h2>
+            <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  className="hover:text-white transition duration-300"
-                  to="/"
+                <a
+                  href="tel:+9100000000000"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  +9100000000000
-                </Link>
+                  +91 0000000000
+                </a>
               </li>
               <li>
-                <Link
-                  className="hover:text-white transition duration-300"
-                  to="/about"
+                <a
+                  href="mailto:000@gmail.com"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  +91 0000000000 (india)
-                </Link>
+                  000@gmail.com
+                </a>
               </li>
               <li>
-                <Link
-                  className="hover:text-white transition duration-300"
-                  to="/contact"
-                >
-                 000@gmail.com
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="hover:text-white transition duration-300"
-                  to="/faq"
-                >
-                  address
-                </Link>
+                <p className="hover:text-[#D4AF37] transition duration-300">
+                address
+                </p>
               </li>
             </ul>
           </div>
 
           {/* Services Section */}
           <div>
-            <h2 className="text-lg mb-4">Services</h2>
-            <ul className="space-y-2">
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Services</h2>
+            <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="hover:text-white transition duration-300"
-                  to="/"
+                  to="/consultancy"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Consultancy || 
+                  Business Consultancy
                 </Link>
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition duration-300"
-                  to="/"
+                  to="/properties"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  
+                  Property Sales
                 </Link>
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition duration-300"
-                  to="/shop"
+                  to="/development"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                 
+                  Development Proposals
                 </Link>
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition duration-300"
-                  to="/shop"
+                  to="/spa"
+                  className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  
+                  Spa and Beauty Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Quick Links Section */}
+          <div>
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Quick Links</h2>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/faq"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -87,17 +115,17 @@ export const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="mt-8 border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm">© Focus Thai</div>
+          <div className="text-sm">&copy; 2025 Aqua. All rights reserved.</div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
               href="#"
-              className="hover:text-white transition duration-300 text-sm"
+              className="hover:text-[#D4AF37] transition duration-300 text-sm"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="hover:text-white transition duration-300 text-sm"
+              className="hover:text-[#D4AF37] transition duration-300 text-sm"
             >
               Terms & Conditions
             </a>

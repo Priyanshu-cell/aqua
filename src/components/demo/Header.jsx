@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"; 
 import React, { useState } from "react";
 import { Link, Element } from "react-scroll";
 
@@ -6,9 +6,9 @@ const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-[#00FFFF] shadow-lg">
-      <nav className="bg-[#00FFFF] border-b-2 border-[#D4AF37]">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
+      <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]">
+        <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-4">
           {/* Logo and Title */}
           <Link
             to="home"
@@ -16,11 +16,11 @@ const Header = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="/logo/company-logo.png"
-              className="h-12 w-12 rounded-full border-2 border-[#D4AF37]"
+              src="/logo/company-logo.svg"
+              className="h-12 w-12 rounded-full border-2 border-[#FFD700]"
               alt="Company Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#D4AF37]">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
               <Element name="home">Aqua</Element>
             </span>
           </Link>
@@ -29,7 +29,7 @@ const Header = () => {
           <button
             onClick={() => setMenuOpen(!isMenuOpen)}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-[#2C3E50] rounded-lg md:hidden hover:bg-[#D4AF37] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
             aria-controls="navbar-dropdown"
             aria-expanded={isMenuOpen}
           >
@@ -58,12 +58,12 @@ const Header = () => {
             } w-full md:block md:w-auto`}
             id="navbar-dropdown"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg md:space-x-8 md:flex-row md:border-0 text-center">
               <li>
                 <Link
                   to="home"
                   smooth={true}
-                  className="block py-2 px-3 text-white bg-[#D4AF37] rounded md:bg-transparent md:text-[#D4AF37] md:p-0 hover:text-white transition duration-300"
+                  className="block py-2 px-3 text-white bg-[#32CD32] rounded md:bg-transparent md:text-[#2C3E50] md:p-0 md:pt-3 hover:text-white transition duration-300 md:hover:text-[#32CD32]"
                   aria-current="page"
                 >
                   Home
@@ -73,7 +73,7 @@ const Header = () => {
                 <Link
                   to="services"
                   smooth={true}
-                  className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   Services
                 </Link>
@@ -82,25 +82,22 @@ const Header = () => {
                 <Link
                   to="consultancy"
                   smooth={true}
-                  className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
-                  Consultancy
+                  Products
                 </Link>
               </li>
               <li>
                 <Link
                   to="about"
                   smooth={true}
-                  className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
-                  contact Us
+                  Contact
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#D4AF37] md:p-0 transition duration-300"
-                >
+                <div className="flex justify-center py-2">
                   <a
                     href="tel:+919999999999"
                     onClick={(e) => {
@@ -115,11 +112,11 @@ const Header = () => {
                     <Avatar>
                       <AvatarImage
                         src="/logo/whatsapp.webp"
-                        className="flex pb-1"
+                        className="h-10 w-10"
                       ></AvatarImage>
                     </Avatar>
                   </a>
-                </Link>
+                </div>
               </li>
             </ul>
           </div>

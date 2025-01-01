@@ -1,9 +1,9 @@
 import { Element } from "react-scroll";
 
-const JoinThai = () => {
+const ThreeBanner = () => {
   return (
     <Element name="services">
-      <div className="bg-[#1B1F3B] text-white py-10 px-10 md:px-40">
+      <div className="bg-[#F0F8FF] text-[#2C3E50] py-10 px-10 md:px-40">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
           About Us
         </h1>
@@ -17,17 +17,17 @@ const JoinThai = () => {
         {/* Modified image container for responsive design */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           <img
-            src="/new/pic--1.jpg"
+            src="/new/pic-1.jpeg"
             alt="Service 1"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />
           <img
-            src="/new/pic--2.png"
+            src="/new/pic-2.jpeg"
             alt="Service 2"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />
           <img
-            src="/new/pic--3.png"
+            src="/new/pic-3.jpeg"
             alt="Service 3"
             className="w-full md:w-1/3 h-auto rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#D4AF37]"
           />
@@ -37,4 +37,4 @@ const JoinThai = () => {
   );
 };
 
-export default JoinThai;
+export default ThreeBanner;

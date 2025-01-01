@@ -7,8 +7,9 @@ import Banner from "./components/demo/Banner";
 import ConsultancyDetails from "./components/demo/ConsultancyDetails";
 import Form from "./components/demo/Form";
 import { SectionHero } from "./components/demo/SectionHero";
-import JoinThai from "./components/demo/JoinThai";
 import Services from "./components/demo/Services";
+import ThreeBanner from "./components/demo/ThreeBanner";
+import GoogleReview from "./components/demo/GoogleReview";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
       <Router>
         <Header />
         <SectionHero />
-        <JoinThai />
+        <ThreeBanner />
         <Services />
         <Banner />
-        <ConsultancyDetails />
+        <GoogleReview />
+        {/* <ConsultancyDetails /> */}
         <Form />
         <Footer />
       </Router>
