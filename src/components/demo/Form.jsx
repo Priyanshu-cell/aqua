@@ -48,7 +48,7 @@ const Form = () => {
           <div
             className="bg-[#25D366] text-[#FFFFFF] rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg hover:bg-[#FF4500]"
             onClick={() =>
-              handleSocialClick("WhatsApp", "https://waw.me/+66956943229")
+              handleSocialClick("WhatsApp", "https://waw.me/+91 7579008065")
             }
           >
             <div className="text-xl font-semibold mb-2">WhatsApp</div>
@@ -59,7 +59,7 @@ const Form = () => {
           <div
             className="bg-[#FF4500] text-[#FFFFFF] rounded-lg p-6 text-center cursor-pointer transform transition-all hover:scale-105 hover:shadow-lg hover:bg-[#FFD700]"
             onClick={() =>
-              handleSocialClick("Gmail", "mailto:focusthaibiz@gmail.com")
+              handleSocialClick("Gmail", "mailto:rohub6@gmail.com")
             }
           >
             <div className="text-xl font-semibold mb-2">Gmail</div>

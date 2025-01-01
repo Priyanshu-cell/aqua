@@ -8,14 +8,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information Section */}
           <div>
-            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Contact Us</h2>
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">
+              Contact Us
+            </h2>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="tel:+9100000000000"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  +91 0000000000
+                  +91 7579008065
                 </a>
               </li>
               <li>
@@ -23,12 +25,13 @@ export const Footer = () => {
                   href="mailto:000@gmail.com"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  000@gmail.com
+                  rohub6@gmail.com
                 </a>
               </li>
               <li>
                 <p className="hover:text-[#D4AF37] transition duration-300">
-                address
+                  Near Teachers Colony, Govind Garh, <br />
+                  Dehradun, Uttarakhand <br /> India
                 </p>
               </li>
             </ul>
@@ -36,7 +39,9 @@ export const Footer = () => {
 
           {/* Services Section */}
           <div>
-            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Services</h2>
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">
+              Services
+            </h2>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -67,7 +72,7 @@ export const Footer = () => {
                   to="/spa"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                Services-2
+                  Services-2
                 </Link>
               </li>
             </ul>
@@ -75,7 +80,9 @@ export const Footer = () => {
 
           {/* Quick Links Section */}
           <div>
-            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">Quick Links</h2>
+            <h2 className="text-lg font-semibold text-[#D4AF37] mb-4">
+              Quick Links
+            </h2>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link

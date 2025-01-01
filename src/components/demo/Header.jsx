@@ -21,7 +21,7 @@ const Header = () => {
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
-              <Element name="home">Aqua</Element>
+              <Element name="home">Shreeansh Aqua Solutions</Element>
             </span>
           </Link>
 
@@ -99,13 +99,13 @@ const Header = () => {
               <li>
                 <div className="flex justify-center py-2">
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+917579008065"
                     onClick={(e) => {
                       e.preventDefault();
                       if (
-                        window.confirm("This will dial +919999999999. Proceed?")
+                        window.confirm("This will dial +917579008065. Proceed?")
                       ) {
-                        window.location.href = "tel:+919999999999";
+                        window.location.href = "tel:+917579008065";
                       }
                     }}
                   >
