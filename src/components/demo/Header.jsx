@@ -21,7 +21,7 @@ const Header = () => {
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
-              <Element name="home">Shreeansh Aqua Solutions</Element>
+              <Element name="home" className="text-lg">Shreeansh Aqua Solutions</Element>
             </span>
           </Link>
 
