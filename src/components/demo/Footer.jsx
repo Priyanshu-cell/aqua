@@ -43,7 +43,7 @@ export const Footer = () => {
                   to="/consultancy"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Business Consultancy
+                  Business
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ export const Footer = () => {
                   to="/properties"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Property Sales
+                  Sales
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ export const Footer = () => {
                   to="/spa"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Spa and Beauty Services
+                Services-2
                 </Link>
               </li>
             </ul>
