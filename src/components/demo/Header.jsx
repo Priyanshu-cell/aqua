@@ -1,18 +1,52 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"; 
-import React, { useState } from "react";
-import { Link, Element } from "react-scroll";
-
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
+
+
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const chatBoxRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (chatBoxRef.current && !chatBoxRef.current.contains(event.target)) {
+        setMenuOpen(false); // Close the menu if clicked outside
+        setIsChatOpen(false); // Close the chat if clicked outside
+      }
+    };
+  
+    const handleNavLinkClick = () => {
+      setMenuOpen(false); // Close the menu when a navigation link is clicked
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+  
+    // Attach the smooth close behavior to all navigation links
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", handleNavLinkClick);
+    });
+  
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      navLinks.forEach((link) => {
+        link.removeEventListener("click", handleNavLinkClick);
+      });
+    };
+  }, []);
+  
 
   return (
-    <div className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
-      <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]">
+    <div
+    ref={chatBoxRef} 
+    className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
+      <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]"
+      >
         <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-4">
           {/* Logo and Title */}
           <Link
-            to="home"
-            smooth={true}
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -21,7 +55,9 @@ const Header = () => {
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
-              <Element name="home" className="text-lg">Shreeansh Aqua Solutions</Element>
+              <div name="home" className="text-lg">
+                Shreeansh Aqua Solutions
+              </div>
             </span>
           </Link>
 
@@ -61,8 +97,7 @@ const Header = () => {
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg md:space-x-8 md:flex-row md:border-0 text-center">
               <li>
                 <Link
-                  to="home"
-                  smooth={true}
+                  to="/home"
                   className="block py-2 px-3 text-white bg-[#32CD32] rounded md:bg-transparent md:text-[#2C3E50] md:p-0 md:pt-3 hover:text-white transition duration-300 md:hover:text-[#32CD32]"
                   aria-current="page"
                 >
@@ -71,8 +106,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="services"
-                  smooth={true}
+                  to="/service"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   Services
@@ -80,20 +114,18 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="consultancy"
-                  smooth={true}
+                  to="/about"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
-                  Products
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  to="about"
-                  smooth={true}
+                  to="/contact"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
