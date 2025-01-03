@@ -26,7 +26,7 @@ const GoogleReview = () => {
         Google Reviews By Our Satisfied Clients
       </div>
       {/* Carousel */}
-      <div className="relative max-w-5xl mx-auto">
+      <div className="relative max-w-5xl mx-auto px-3">
         <Carousel
           opts={{
             align: "start",
