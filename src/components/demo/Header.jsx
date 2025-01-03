@@ -43,7 +43,7 @@ const Header = () => {
     className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
       <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]"
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-3">
           {/* Logo and Title */}
           <Link
             to="/"
@@ -56,7 +56,7 @@ const Header = () => {
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
               <div name="home" className="text-lg">
-                Shreeansh Aqua Solutions
+                <span className="text-xl font-bold font" >RO</span> <span className="text-xl font-bold">HUB</span>
               </div>
             </span>
           </Link>

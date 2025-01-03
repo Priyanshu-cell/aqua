@@ -1,4 +1,3 @@
-import { Element } from "react-scroll";
 import { HomeSlider } from "./HomeSlider";
 import img1 from "/images/img-1.jpeg";
 import img2 from "/images/img-2.jpeg";
@@ -11,10 +10,7 @@ const IMAGES = [img2, img4, img3,img1];
 export const SectionHero = () => {
   return (
     <>
-    <Element name="home">
     <HomeSlider imageUrls={IMAGES} />
-    </Element>
-      
     </>
   );
 };
