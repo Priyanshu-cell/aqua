@@ -14,10 +14,10 @@ import img4 from "/google/pic-4.jpg";
 
 const GoogleReview = () => {
   const reviews = [
-    { img: img1, text: "Great service and ambiance!", name: "Timothy Garrett" },
-    { img: img2, text: "The food was incredible!", name: "Joe Lawson" },
-    { img: img3, text: "Amazing experience overall!", name: "Lori Coleman" },
-    { img: img4, text: "Highly recommend this place!", name: "Emily Brown" },
+    { img: img1, text: "Great service and ambiance!", name: "Atul Uniyal" },
+    { img: img2, text: "The service was incredible!", name: "Akhilesh" },
+    { img: img3, text: "Amazing experience overall!", name: "Soni Negi" },
+    { img: img4, text: "Highly recommend this place!", name: "Raj Mehra" },
   ];
 
   return (

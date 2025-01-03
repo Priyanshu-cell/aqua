@@ -11,7 +11,7 @@ const WhyUs = () => {
     {
       logo: <PercentDiamond size={30} className="text-blue-500" />,
       details: "Instant Discount",
-      info: "10% instant discount with all debit and credit cards",
+      info: "A quality conscious mind that has developed quintessence products",
     },
     {
       logo: <ScanIcon size={30} className="text-green-500" />,
