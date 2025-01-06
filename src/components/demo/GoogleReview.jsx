@@ -33,7 +33,7 @@ const GoogleReview = () => {
           }}
           className="w-full"
         >
-          <CarouselContent className="flex gap-4">
+          <CarouselContent>
             {reviews.map((review, index) => (
               <CarouselItem
                 key={index}
