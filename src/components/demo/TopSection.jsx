@@ -1,30 +1,54 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopSection = () => {
   const serviceDetails = [
-    { title: "Water Purifier", img: "/TopSection/water-purifier.png" },
-    { title: "Domestic Ro", img: "/TopSection/domestic-ro.png" },
-    { title: "Commercial Ro", img: "/TopSection/commercial-ro.png" },
-    { title: "Industrial Ro", img: "/TopSection/industrial-ro.png" },
-    { title: "Water Softener", img: "/TopSection/water-softener.png" },
+    {
+      title: "Water Purifier",
+      img: "/TopSection/water-purifier.png",
+      url: "/water-purifier",
+    },
+    {
+      title: "Domestic Ro",
+      img: "/TopSection/domestic-ro.png",
+      url: "/domestic-ro",
+    },
+    {
+      title: "Commercial Ro",
+      img: "/TopSection/commercial-ro.png",
+      url: "/commercial-ro",
+    },
+    {
+      title: "Industrial Ro",
+      img: "/TopSection/industrial-ro.png",
+      url: "/industrial-ro",
+    },
+    {
+      title: "Water Softener",
+      img: "/TopSection/water-softener.png",
+      url: "/water-softener",
+    },
   ];
+
+  const handleOnClick = (url) => {
+    if (url) {
+      console.log(url);
+    } else {
+      console.warn("wrong input");
+    }
+  };
 
   return (
     <div className="bg-gray-100 py-4 md:px-20">
       <div className="flex items-center justify-between space-x-4 overflow-x-auto scrollbar-hide px-4 no-scrollbar">
-        {serviceDetails.map((service, index) => (
+        {serviceDetails.map(({ title, img, url }, index) => (
           <div
             key={index}
-            className="flex-shrink-0 flex flex-col items-center justify-center w-32 text-center space-y-2"
+            className="flex-shrink-0 flex flex-col items-center justify-center w-32 text-center space-y-2 
+            rounded hover:bg-[#704343d4] transition-all duration-300"
+            onClick={() => handleOnClick(url)}
           >
-            <img
-              src={service.img}
-              alt={service.title}
-              className="w-12 h-12 object-contain"
-            />
-            <span className="text-sm font-medium text-gray-800">
-              {service.title}
-            </span>
+            <img src={img} alt={title} className="w-12 h-12 object-contain" />
+            <span className="text-sm font-medium text-gray-800">{title}</span>
           </div>
         ))}
       </div>

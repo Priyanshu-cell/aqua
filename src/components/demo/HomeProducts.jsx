@@ -54,7 +54,7 @@ const HomeProducts = () => {
 
   return (
     <div className="px-4 md:px-8 bg-white py-4">
-      <h1 className="text-center font-bold text-2xl md:text-3xl py-6">
+      <h1 className="text-center font-bold text-2xl md:text-3xl py-3 md:py-4 pb-4">
         Explore Our Products
       </h1>
 

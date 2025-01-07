@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import NotFound from "./components/demo/NotFound";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/demo/ScrollToTop";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<><Header /><Home /><Footer /></>} />
         <Route path="/about" element={<><Header /><AboutUs /><Footer /></>} />
         <Route path="/contact" element={<><Header /><ContactUs /><Footer /></>} />
+        <Route path="/services" element={<><Header /><Services /><Footer /></>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

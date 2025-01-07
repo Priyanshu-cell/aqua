@@ -2,8 +2,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
-
-
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const chatBoxRef = useRef(null);
@@ -15,19 +13,19 @@ const Header = () => {
         setIsChatOpen(false); // Close the chat if clicked outside
       }
     };
-  
+
     const handleNavLinkClick = () => {
       setMenuOpen(false); // Close the menu when a navigation link is clicked
     };
-  
+
     document.addEventListener("mousedown", handleClickOutside);
-  
+
     // Attach the smooth close behavior to all navigation links
     const navLinks = document.querySelectorAll("nav a");
     navLinks.forEach((link) => {
       link.addEventListener("click", handleNavLinkClick);
     });
-  
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
       navLinks.forEach((link) => {
@@ -35,14 +33,10 @@ const Header = () => {
       });
     };
   }, []);
-  
 
   return (
-    <div
-    ref={chatBoxRef} 
-    className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
-      <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]"
-      >
+    <div ref={chatBoxRef} className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
+      <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]">
         <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-3">
           {/* Logo and Title */}
           <Link
@@ -50,13 +44,14 @@ const Header = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="/logo/company-logo.svg"
+              src="/logo/RO2.jpg"
               className="h-12 w-12 rounded-full border-2 border-[#FFD700]"
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
               <div name="home" className="text-lg">
-                <span className="text-xl font-bold font" >RO</span> <span className="text-xl font-bold">HUB</span>
+                <span className="text-xl font-bold font">RO</span>{" "}
+                <span className="text-xl font-bold">HUB</span>
               </div>
             </span>
           </Link>
@@ -106,7 +101,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="/service"
+                  to="/services"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   Services
