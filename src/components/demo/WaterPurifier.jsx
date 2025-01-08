@@ -1,6 +1,6 @@
 import React from "react";
 import itemData from "../../data/water-purifier.json";
-import WaterHeader from "./WaterHeader";
+import WaterHeader from "./WaterHeader.jsx";
 
 const WaterPurifier = () => {
   return (
