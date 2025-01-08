@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const TopSection = () => {
   const serviceDetails = [
@@ -29,27 +29,20 @@ const TopSection = () => {
     },
   ];
 
-  const handleOnClick = (url) => {
-    if (url) {
-      console.log(url);
-    } else {
-      console.warn("wrong input");
-    }
-  };
-
   return (
     <div className="bg-gray-100 py-4 md:px-20">
       <div className="flex items-center justify-between space-x-4 overflow-x-auto scrollbar-hide px-4 no-scrollbar">
         {serviceDetails.map(({ title, img, url }, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 flex flex-col items-center justify-center w-32 text-center space-y-2 
+          <Link key={index}
+          to={`${url}`}>
+            <div
+              className="flex-shrink-0 flex flex-col items-center justify-center w-32 text-center space-y-2 
             rounded hover:bg-[#704343d4] transition-all duration-300"
-            onClick={() => handleOnClick(url)}
-          >
-            <img src={img} alt={title} className="w-12 h-12 object-contain" />
-            <span className="text-sm font-medium text-gray-800">{title}</span>
-          </div>
+            >
+              <img src={img} alt={title} className="w-12 h-12 object-contain" />
+              <span className="text-sm font-medium text-gray-800">{title}</span>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -4,32 +4,34 @@
     "title": "Water Purifier",
     "image": "/services/water-purifier.jpg",
     "button": "Click to view",
-    "url" : ""
-  },{
+    "url": "/water-purifier"
+  },
+  {
     "id": 2,
     "title": "Domestic Ro",
-    "image": "/services/water-purifier.jpg",
+    "image": "/services/domestic-ro.jpg",
     "button": "Click to view",
-    "url" : ""
-  },{
+    "url": "/domestic-ro"
+  },
+  {
     "id": 3,
-    
     "title": "Commercial Ro",
-    "image": "/services/water-purifier.jpg",
+    "image": "/services/commercial-ro.jpg",
     "button": "Click to view",
-    "url" : ""
-  },{
+    "url": "/commercial-ro"
+  },
+  {
     "id": 4,
     "title": "Industrial Ro",
-    "image": "/services/water-purifier.jpg",
+    "image": "/services/industrial-ro.jpg",
     "button": "Click to view",
-    "url" : ""
-  },{
+    "url": "/industrial-ro"
+  },
+  {
     "id": 5,
-    
     "title": "Water Softener",
-    "image": "/services/water-purifier.jpg",
+    "image": "/services/water-softener.jpg",
     "button": "Click to view",
-    "url" : ""
+    "url": "/water-softener"
   }
 ]
