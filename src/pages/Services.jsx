@@ -15,7 +15,8 @@ const Services = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {itemData.map(({ id, title, image, button, url }, index) => (
-          <div key={id} className="transform transition-transform hover:scale-105">
+          <Link key={id} to={`${url}`}>
+          <div className="transform transition-transform hover:scale-105">
             <Card className="cursor-pointer bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center font-semibold text-4xl text-gradient bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
                 {title}
@@ -28,10 +29,11 @@ const Services = () => {
                 />
               </CardContent>
               <CardFooter className="text-center justify-center text-yellow-400 font-medium hover:text-yellow-500">
-                <Link to={`${url}`}>{button}</Link>  {/* Link component for navigation */}
+                <Link to={`${url}`}>{button}</Link>
               </CardFooter>
             </Card>
           </div>
+          </Link>
         ))}
       </div>
     

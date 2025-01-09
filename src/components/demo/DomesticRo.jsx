@@ -1,9 +1,23 @@
-import React from 'react'
+import itemData from "../../data/domestic-ro.json";
+import Products from "./products";
+import WaterHeader from "./WaterHeader";
 
 const DomesticRo = () => {
-  return (
-    <div>DomesticRo</div>
-  )
-}
+  const headerData = {
+    title: "Domestic RO",
+    img: "/home-products/water-purifier.png",
+    firstDetails: "Suitable for Municipal, Borewell & ",
+    secondDetails: "Tanker water.",
+    bold: "TDS from 0—2000 mg/l",
+  };
 
-export default DomesticRo
+  const title = "Domestic RO";
+  return (
+    <>
+      <WaterHeader {...headerData} />
+      <Products itemData={itemData} title={title} />
+    </>
+  );
+};
+
+export default DomesticRo;

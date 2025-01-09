@@ -1,9 +1,23 @@
-import React from 'react'
+import itemData from "../../data/water-softener.json";
+import Products from "./products";
+import WaterHeader from "./WaterHeader";
 
 const WaterSoftener = () => {
-  return (
-    <div>WaterSoftener</div>
-  )
-}
+  const headerData = {
+    title: "Water Softener",
+    img: "/home-products/water-purifier.png",
+    firstDetails: "Suitable for Municipal, Borewell & ",
+    secondDetails: "Tanker water.",
+    bold: "TDS from 0—2000 mg/l",
+  };
 
-export default WaterSoftener
+  const title = "Water Softener";
+  return (
+    <>
+      <WaterHeader {...headerData} />
+      <Products itemData={itemData} title={title} />
+    </>
+  );
+};
+
+export default WaterSoftener;

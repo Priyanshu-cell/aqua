@@ -34,7 +34,7 @@ const WhyUs = () => {
     <div className="bg-gray-100 py-8">
       {/* Header */}
       <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 ">
           Why buy from RO HUB?
         </h2>
       </div>
@@ -55,7 +55,7 @@ const WhyUs = () => {
             </h3>
 
             {/* Info */}
-            <p className="text-sm text-gray-600 mt-1">{product.info}</p>
+            <p className="text-sm text-gray-600 mt-1 text-center">{product.info}</p>
           </div>
         ))}
       </div>

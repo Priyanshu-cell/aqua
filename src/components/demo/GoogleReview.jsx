@@ -32,11 +32,10 @@ const GoogleReview = () => {
             align: "start",
           }}
           className="w-full"
-        >
-          <CarouselContent>
+        >      
+              <CarouselContent>
             {reviews.map((review, index) => (
-              <CarouselItem
-                key={index}
+              <CarouselItem  key={index}
                 className="flex-shrink-0 md:basis-1/2 lg:basis-1/3"
               >
                 <div className="p-2">
