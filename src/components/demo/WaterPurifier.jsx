@@ -1,4 +1,5 @@
 import itemData from "../../data/water-purifier.json";
+import Item from "./Item.jsx";
 import Products from "./ProductData.jsx";
 import WaterHeader from "./WaterHeader.jsx";
 
@@ -17,6 +18,7 @@ const WaterPurifier = () => {
     <>
       <WaterHeader {...headerData} />
       <Products itemData={itemData} title={title} />
+      <Item />
     </>
   );
 };

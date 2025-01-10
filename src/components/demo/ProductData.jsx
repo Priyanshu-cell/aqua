@@ -1,31 +1,56 @@
 const Products = ({ itemData, title }) => {
   return (
-    <div className="text-center py-10 bg-gray-100 text-black">
-      <h1 className="text-3xl font-bold mb-6">{title}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+    <div className="text-center py-10 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold mb-8 text-white bg-clip-text text-transparent">
+        {title}
+      </h1>
+
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {itemData.map((item) => (
           <div
             key={item.id}
-            className="bg-white shadow-md rounded-md p-4 hover:shadow-lg transition duration-300"
+            className="bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-xl transition-transform transform hover:scale-105"
           >
-            <img
-              src={item.image}
-              alt={item.model}
-              className="w-full h-48 object-cover rounded-t-md"
-            />
-            <h2 className="text-xl font-semibold mt-4">{item.model}</h2>
-            <ul className="text-gray-600 text-sm mt-2">
-              {item.tags.map((tag, index) => (
-                <li key={index}>- {tag}</li>
-              ))}
-            </ul>
-            <div className="text-left mt-4">
-              <p>
-                <span className="font-semibold text-lg text-green-600">
-                  ₹{item.price}
-                </span>
-                <span className="line-through text-gray-500">₹{item.MRP}</span>
-              </p>
+            {/* Product Image */}
+            <div className="relative pb-56 overflow-hidden rounded-lg">
+              <img
+                src={item.image}
+                alt={item.model}
+                className="absolute h-full w-full object-cover"
+              />
+            </div>
+
+            {/* Product Details */}
+            <div className="mt-4">
+              <h2 className="text-xl font-bold mb-2 text-white">
+                {item.model}
+              </h2>
+
+              {/* Tags */}
+              <ul className="flex flex-wrap gap-2 mt-2">
+                {item.tags.map((tag, index) => (
+                  <li
+                    key={index}
+                    className="px-2 py-1 text-sm rounded-full border border-yellow-500 bg-gray-900 text-white"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Price Section */}
+              <div className="mt-4 text-left">
+                <p>
+                  <span className="font-bold text-2xl text-green-400">
+                    ₹{item.price}
+                  </span>
+                  <span className="ml-2 line-through text-gray-400 text-lg">
+                    ₹{item.MRP}
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         ))}
