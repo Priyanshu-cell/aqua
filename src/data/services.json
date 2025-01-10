@@ -9,28 +9,28 @@
   {
     "id": 2,
     "title": "Domestic Ro",
-    "image": "/services/domestic-ro.jpg",
+    "image": "/services/water-purifier.jpg",
     "button": "Click to view",
     "url": "/domestic-ro"
   },
   {
     "id": 3,
     "title": "Commercial Ro",
-    "image": "/services/commercial-ro.jpg",
+    "image": "/services/water-purifier.jpg",
     "button": "Click to view",
     "url": "/commercial-ro"
   },
   {
     "id": 4,
     "title": "Industrial Ro",
-    "image": "/services/industrial-ro.jpg",
+    "image": "/services/water-purifier.jpg",
     "button": "Click to view",
     "url": "/industrial-ro"
   },
   {
     "id": 5,
     "title": "Water Softener",
-    "image": "/services/water-softener.jpg",
+    "image": "/services/water-purifier.jpg",
     "button": "Click to view",
     "url": "/water-softener"
   }

@@ -1,5 +1,5 @@
 import itemData from "../../data/commercial-ro.json";
-import Products from "./products";
+import Products from "./ProductData";
 import WaterHeader from "./WaterHeader";
 
 const CommercialRo = () => {
@@ -17,7 +17,7 @@ const CommercialRo = () => {
       <WaterHeader {...headerData} />
       <Products itemData={itemData} title={title} />
     </>
-  )
-}
+  );
+};
 
-export default CommercialRo
+export default CommercialRo;

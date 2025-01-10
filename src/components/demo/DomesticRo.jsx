@@ -1,5 +1,5 @@
 import itemData from "../../data/domestic-ro.json";
-import Products from "./products";
+import Products from "./ProductData";
 import WaterHeader from "./WaterHeader";
 
 const DomesticRo = () => {

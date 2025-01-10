@@ -1,5 +1,5 @@
 import itemData from "../../data/water-softener.json";
-import Products from "./products";
+import Products from "./ProductData.jsx";
 import WaterHeader from "./WaterHeader";
 
 const WaterSoftener = () => {

@@ -1,5 +1,5 @@
 import itemData from "../../data/industrial-ro.json";
-import Products from "./products";
+import Products from "./ProductData";
 import WaterHeader from "./WaterHeader";
 
 const IndustrialRo = () => {
