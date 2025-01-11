@@ -32,12 +32,12 @@ const AboutTopBanner = () => {
       </div>
 
       <div className="bg-gray-200 text-gray-700 py-10">
-        <div className="max-w-4xl mx-auto px-6 md:px-10 font-mono">
+        <div className="max-w-4xl mx-auto px-6 md:px-10">
           {/* Heading Section */}
           <div className="mb-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-center">
+            <h3 className="text-2xl md:text-3xl font-bold font-mono text-gray-800 text-center md:text-center">
               We are the brainchild of an able promoter who has built our
-              industry with strong values and broad vision.
+              industry with strong values and broad vision
             </h3>
             <span></span>
           </div>
