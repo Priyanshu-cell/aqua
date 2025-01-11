@@ -1,10 +1,10 @@
-import Address from '@/components/demo/Address'
-import React from 'react'
-
+import AboutClient from '@/components/demo/AboutClient'
+import AboutTopBanner from '@/components/demo/AboutTopBanner'
 const AboutUs = () => {
   return (
     <>
-    <div>about</div>
+    <AboutTopBanner />
+    <AboutClient />
     </>
   )
 }
