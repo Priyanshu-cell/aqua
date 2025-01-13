@@ -57,7 +57,7 @@ export const Footer = () => {
                   to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Domestic Ro
+                  Domestic RO
                 </Link>
               </li>
               <li>
@@ -65,7 +65,7 @@ export const Footer = () => {
                   to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Development Proposals
+                  Commercial RO
                 </Link>
               </li>
               <li>
@@ -73,7 +73,7 @@ export const Footer = () => {
                   to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Industrial Ro
+                  Industrial RO
                 </Link>
               </li>
               <li>
