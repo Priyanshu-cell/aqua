@@ -18,6 +18,8 @@ import DomesticRo from "./components/demo/DomesticRo";
 import CommercialRo from "./components/demo/CommercialRo";
 import IndustrialRo from "./components/demo/IndustrialRo";
 import WaterSoftener from "./components/demo/WaterSoftener";
+import WhatsAppWidget from "./components/demo/WhatsAppWidget";
+import PhoneIcon from "./components/demo/PhoneIcon";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/home" element={<Navigate to="/" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <WhatsAppWidget />
+      <PhoneIcon phoneNumber="+917579008065"/>
       <Footer />
     </Router>
   );

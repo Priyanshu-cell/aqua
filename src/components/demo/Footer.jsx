@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebookF } from "react-icons/fa"; // Importing icons from react-icons
 
 export const Footer = () => {
   return (
@@ -14,7 +15,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="tel:+9100000000000"
+                  href="tel:+917579008065"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
                   +91 7579008065
@@ -45,23 +46,23 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/consultancy"
+                  to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Business
+                  Water Purifier
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/properties"
+                  to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Sales
+                  Domestic Ro
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/development"
+                  to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
                   Development Proposals
@@ -69,10 +70,18 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/spa"
+                  to="/services"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Services-2
+                  Industrial Ro
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  Water Softener
                 </Link>
               </li>
             </ul>
@@ -108,13 +117,23 @@ export const Footer = () => {
                   FAQ
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/blog"
+              <li className="flex space-x-4 justify-start">
+                <a
+                  href="https://www.instagram.com/shreeanshaquasolutions/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
-                  Blog
-                </Link>
+                  <FaInstagram className="text-2xl text-red-500" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Shreeansh-aqua-solutions/61562594014516/?sk=about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D4AF37] transition duration-300"
+                >
+                  <FaFacebookF className="text-2xl text-blue-500" />
+                </a>
               </li>
             </ul>
           </div>

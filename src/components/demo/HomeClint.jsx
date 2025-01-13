@@ -3,16 +3,16 @@ import React from "react";
 const HomeClint = () => {
   const clients = [
     {
-      img: "//images.ctfassets.net/kc2xclar6nri/1A38eA8eNg8Yvzwmh3P9sG/99994a733427c646588432a4b1ca8e6e/Venky-s_India.jpg?fit=scale&amp;w=1320&amp;fm=webp",
+      img: "/aboutus/client-logo/logo-8.png",
       alt: "Venky-s India",
     },
-    { img: "/client/uk-logo.png", alt: "UK Logo" },
-    { img: "/client/vh-logo.png", alt: "VH Logo" },
-    { img: "/client/sarovar.png", alt: "Sarovar" },
-    { img: "/client/indra-gandhi.png", alt: "Indra Gandhi" },
-    { img: "/client/icfai.png", alt: "ICFAI" },
-    { img: "/client/ibdi-bank.png", alt: "IBDI Bank" },
-    { img: "/client/hometelroorkhi.png", alt: "Hometel Roorkee" },
+    { img: "/aboutus/client-logo/logo-1.png", alt: "UK Logo" },
+    { img: "/aboutus/client-logo/logo-2.png", alt: "VH Logo" },
+    { img: "/aboutus/client-logo/logo-3.png", alt: "Sarovar" },
+    { img: "/aboutus/client-logo/logo-4.png", alt: "Indra Gandhi" },
+    { img: "/aboutus/client-logo/logo-5.png", alt: "ICFAI" },
+    { img: "/aboutus/client-logo/logo-6.png", alt: "IBDI Bank" },
+    { img: "/aboutus/client-logo/logo-7.png", alt: "Hometel Roorkee" },
   ];
 
   return (
