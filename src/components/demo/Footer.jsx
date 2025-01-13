@@ -141,7 +141,7 @@ export const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="mt-8 border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm">&copy; 2025 Aqua. All rights reserved.</div>
+          <div className="text-sm">&copy; 2025 RO HUB All rights reserved.</div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
               href="#"

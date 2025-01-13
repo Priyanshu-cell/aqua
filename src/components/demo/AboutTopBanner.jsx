@@ -12,12 +12,10 @@ const AboutTopBanner = () => {
 
         {/* Main Content */}
         <div className="relative flex flex-col items-center text-center justify-center px-6 md:px-10 lg:px-20 pt-10md:py-10 font-mono">
-          {/* Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Get To Know Inside
           </h1>
 
-          {/* Description */}
           <p className="text-base md:text-xl text-gray-200 mb-6 max-w-3xl font-semibold">
             We are established with a motto to offer complete technical
             solutions in water treatment from concept stage to commissioning
