@@ -18,7 +18,7 @@ const AboutTopBanner = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-gray-200 mb-6 max-w-3xl font-semibold">
+          <p className="text-base md:text-xl text-gray-200 mb-6 max-w-3xl font-semibold">
             We are established with a motto to offer complete technical
             solutions in water treatment from concept stage to commissioning
             stage with the best engineering standards and specifications.

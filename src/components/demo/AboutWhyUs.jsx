@@ -1,4 +1,3 @@
-import React from "react";
 import { useInView } from "react-intersection-observer";
 
 const AboutWhyUs = () => {
@@ -8,19 +7,19 @@ const AboutWhyUs = () => {
   });
 
   return (
-    <div className="bg-gray-50 py-12 px-6 md:px-12">
+    <div className="bg-gray-50 py-10 md:pb-12 md:pt-2 px-6 md:px-16 lg:px-20">
       <div
         ref={ref}
-        className={`max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center transition-all duration-700 ${
+        className={`max-w-screen-xl md:px-8 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center transition-all duration-700 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
         {/* Text Section */}
-        <div className="text-gray-800">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1B1F3B]">
+        <div className="text-gray-800 md:pl-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1B1F3B] text-center font-mono">
             Why Us?
           </h2>
-          <p className="text-base md:text-lg leading-relaxed mb-4">
+          <p className= " text-base md:text-lg leading-relaxed mb-6 font-sans text-justify">
             We have on the record a number of positive attributes that have made
             us a remarkable industry earning reputation. Very soon, we hope our
             dreams of attaining a global position become true. We are true to
@@ -36,7 +35,7 @@ const AboutWhyUs = () => {
               "Prompt and quick services",
               "Transparency in the system",
             ].map((item, index) => (
-              <li key={index} className="animate-fade-in-up">
+              <li key={index} className="animate-fade-in-up text-justify">
                 {item}
               </li>
             ))}

@@ -6,14 +6,11 @@ const AboutClient = () => {
       <div className="max-w-6xl mx-auto px-6 sm:px-6 md:px-10 font-sans text-center">
         {/* Section Heading */}
         <div className="text-center mb-8 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-4 font-mono">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-mono">
             Our Clients
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify md:px-8">
-            Clients are our priority, and we strive to meet their needs for
-            standard water purification systems. Through collaboration and
-            understanding, we have built strong relationships that have helped
-            expand our client base.
+            Clients are our priority, and we strive to meet their needs for standard water purification systems. Through collaboration and understanding, we have built strong relationships that have helped expand our client base.
           </p>
         </div>
 
