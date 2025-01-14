@@ -81,19 +81,22 @@
 
 @media only screen and (min-width: 1211px) {
   .sectionContainer {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
 @media only screen and (max-width: 1210px) {
   .sectionContainer {
-    height: 90vh;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 720px) {
   .imgSliderImg {
     object-position: 50% 20%;
+  }
+  .imgSliderDotButtons{
+    display: none;
   }
 }
 
