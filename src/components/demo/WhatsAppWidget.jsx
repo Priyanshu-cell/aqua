@@ -37,13 +37,14 @@ const WhatsAppWidget = () => {
     <div className="fixed bottom-5 right-5 z-50">
       {/* Floating WhatsApp Icon */}
       <div
-        className="bg-[#000000d8] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition"
+  
+
         onClick={() => setIsChatOpen(!isChatOpen)}
       >
         <img
-          src="/logo/whatsapp.webp"
+          src="/logo/whatsapp.png"
           alt="WhatsApp"
-          className="w-6 h-6"
+          className="w-12 h-12"
         />
       </div>
 
@@ -60,11 +61,11 @@ const WhatsAppWidget = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Type your message..."
-          className="w-full h-20 border rounded-lg p-2 text-gray-700 focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full h-20 border rounded-lg p-2 text-[#0BDA51] focus:outline-none focus:ring focus:border-blue-300"
         />
         <button
           onClick={handleSendMessage}
-          className="mt-2 w-full bg-green-500 text-white py-2 px-4 rounded-lg shadow hover:bg-green-600 transition flex items-center justify-center space-x-2"
+          className="mt-2 w-full bg-[#0BDA51] text-white py-2 px-4 rounded-lg shadow hover:bg-green-600 transition flex items-center justify-center space-x-2"
         >
           <span>Send</span>
           <Send size={16} />

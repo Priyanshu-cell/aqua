@@ -136,12 +136,7 @@ const Header = () => {
                       }
                     }}
                   >
-                    <Avatar>
-                      <AvatarImage
-                        src="/logo/whatsapp.webp"
-                        className="h-10 w-10"
-                      ></AvatarImage>
-                    </Avatar>
+                    
                   </a>
                 </div>
               </li>
