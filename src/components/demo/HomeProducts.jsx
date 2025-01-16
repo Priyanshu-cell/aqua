@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeProducts = () => {
   const products = [
@@ -74,9 +75,12 @@ const HomeProducts = () => {
             />
             <p className="text-lg font-medium">{product.name}</p>
             <p className="text-sm text-gray-700 mb-4">{product.offers}</p>
-            <button className="self-start bg-white text-black px-4 py-2 rounded hover:bg-gray-100">
-              {product.button}
-            </button>
+            <Link to="/services">
+              {" "}
+              <button className="self-start bg-white text-black px-4 py-2 rounded hover:bg-gray-100">
+                {product.button}
+              </button>
+            </Link>
           </div>
         ))}
       </div>
