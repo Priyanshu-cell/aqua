@@ -24,21 +24,21 @@ const SpecificationTwo = ({ productDataTwo }) => {
         </div>
 
         {/* Specifications */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-semibold mb-6 text-indigo-700">Specifications:</h3>
+        <div className="bg-yellow-900 p-6 rounded-lg shadow-md">
+          <h3 className="text-3xl font-semibold mb-6 text-white">Specifications:</h3>
           <ul className="space-y-4">
             {/* Dynamically render specifications */}
             {Object.entries(productDataTwo.specifications).map(([key, value]) => (
-              <li key={key} className="text-lg text-gray-800">
-                <strong className="text-xl text-indigo-600 capitalize">{key.replace(/([A-Z])/g, " $1")}: </strong>
+              <li key={key} className="text-lg text-black">
+                <strong className="text-xl text-indigo-900 capitalize">{key.replace(/([A-Z])/g, " $1")}: </strong>
                 {Array.isArray(value) ? (
                   <ul className="list-disc pl-6 space-y-1">
                     {value.map((item, index) => (
-                      <li key={index} className="text-gray-700">{item}</li>
+                      <li key={index} className="text-black">{item}</li>
                     ))}
                   </ul>
                 ) : (
-                  <span className="text-gray-600">{value}</span>
+                  <span className="text-black">{value}</span>
                 )}
               </li>
             ))}

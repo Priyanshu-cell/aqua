@@ -22,30 +22,30 @@ const SpecificationFour = ({ productDataFour }) => {
       </div>
 
       {/* Specifications Section */}
-      <div className="bg-white p-6 md:p-8 rounded-lg shadow-md space-y-6">
-        <h3 className="text-2xl md:text-3xl font-semibold text-indigo-700">Specifications</h3>
+      <div className="bg-yellow-900 p-6 md:p-8 rounded-lg shadow-md space-y-6">
+        <h3 className="text-2xl md:text-3xl font-semibold text-white">Specifications</h3>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {Object.entries(productDataFour.specifications).map(([key, value]) => (
-            <li key={key} className="text-lg text-gray-800">
-              <strong className="text-indigo-600 capitalize">
+            <li key={key} className="text-lg black">
+              <strong className="text-indigo-950 capitalize">
                 {key.replace(/([A-Z])/g, " $1")}:{" "}
               </strong>
               {Array.isArray(value) ? (
                 <ul className="list-disc pl-6 space-y-1">
                   {value.map((item, index) => (
-                    <li key={index} className="text-gray-700">{item}</li>
+                    <li key={index} className="text-black">{item}</li>
                   ))}
                 </ul>
               ) : typeof value === "object" ? (
                 <ul className="list-disc pl-6 space-y-1">
                   {Object.entries(value).map(([subKey, subValue]) => (
-                    <li key={subKey} className="text-gray-700">
+                    <li key={subKey} className="text-black">
                       <strong className="capitalize">{subKey.replace(/([A-Z])/g, " $1")}: </strong>{subValue}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <span className="text-gray-600">{value}</span>
+                <span className="black">{value}</span>
               )}
             </li>
           ))}
