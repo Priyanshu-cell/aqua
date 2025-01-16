@@ -4,7 +4,7 @@ const HomeProducts = () => {
   const products = [
     {
       heading: "Pre-filter to remove large particles",
-      img: "/home-products/water-purifier.png",
+      img: "/water-purifier/img-2.jpg",
       name: "Gravity purifier",
       offers: "Eco-Friendly",
       button: "Explore Now",
@@ -12,7 +12,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Storage purifier uv based",
-      img: "/home-products/water-purifier.png",
+      img: "/water-purifier/img-3.jpg",
       name: "Aquafresh UV-Based Storage Purifier",
       offers: "Chemical-Free Purification:",
       button: "Explore Now",
