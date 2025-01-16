@@ -27,7 +27,7 @@ const SpecificationFour = ({ productDataFour }) => {
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {Object.entries(productDataFour.specifications).map(([key, value]) => (
             <li key={key} className="text-lg black">
-              <strong className="text-indigo-950 capitalize">
+              <strong className="text-indigo-400 capitalize">
                 {key.replace(/([A-Z])/g, " $1")}:{" "}
               </strong>
               {Array.isArray(value) ? (

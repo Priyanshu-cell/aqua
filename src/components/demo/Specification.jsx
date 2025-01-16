@@ -27,7 +27,7 @@ const Specification = ({ productData }) => {
             {/* Dynamically render specifications */}
             {Object.entries(productData.specifications).map(([key, value]) => (
               <li key={key} className="text-gray-800">
-                <strong className="text-indigo-950 capitalize">{key.replace(/([A-Z])/g, " $1")}: </strong>
+                <strong className="text-indigo-400 capitalize">{key.replace(/([A-Z])/g, " $1")}: </strong>
                 {Array.isArray(value) ? (
                   <ul className="list-disc pl-5 space-y-1">
                     {value.map((item, index) => (
