@@ -6,9 +6,9 @@ const SpecificationTwo = ({ productDataTwo }) => {
   }
 
   return (
-    <div className="p-6 md:px-16 lg:px-32 mx-auto bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 rounded-lg shadow-xl space-y-6 w-full">
+    <div className="p-6 md:px-16 lg:px-32 mx-auto bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 shadow-xl space-y-6 w-full product-background-related">
       {/* Product Name */}
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 hover:text-indigo-600 transition duration-300 ease-in-out">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
         {productDataTwo.name}
       </h2>
 

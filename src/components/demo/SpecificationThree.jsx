@@ -6,9 +6,9 @@ const SpecificationThree = ({ productDataThree }) => {
   }
 
   return (
-    <div className="p-6 md:px-32 mx-auto bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-300 min-h-screen rounded-lg shadow-xl space-y-6">
+    <div className="p-6 md:px-32 mx-auto bg-gradient-to-r from-teal-200 via-blue-200 to-indigo-300 min-h-screen shadow-xl space-y-6 product-background">
       {/* Product Name */}
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 hover:text-indigo-600 transition duration-300 ease-in-out">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
         {productDataThree.name}
       </h2>
 

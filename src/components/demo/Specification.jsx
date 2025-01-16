@@ -2,9 +2,9 @@ import React from "react";
 
 const Specification = ({ productData }) => {
   return (
-    <div className="p-6 md:px-16 lg:px-32 mx-auto bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-300 rounded-lg shadow-xl space-y-8 w-full">
+    <div className="p-6 md:px-16 lg:px-32 mx-auto bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-300 shadow-xl space-y-8 w-full product-background">
       
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 hover:text-indigo-600 transition duration-300 ease-in-out">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
         {productData.name}
       </h2>
 

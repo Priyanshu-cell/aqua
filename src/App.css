@@ -12,3 +12,12 @@
 .animate-fade-in-up {
   animation: fade-in-up 5.8s ease-in-out;
 }
+
+/* app.css */
+.product-background {
+  background: linear-gradient(to right, #36424f, #232a33);
+}
+
+.product-background-related {
+  background: linear-gradient(to top, #2e3a46, #1d252d);
+}

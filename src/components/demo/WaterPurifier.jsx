@@ -10,6 +10,7 @@ import Specification from "./Specification.jsx";
 import SpecificationTwo from "./SpecificationTwo";
 import SpecificationThree from "./SpecificationThree";
 import SpecificationFour from "./SpecificationFour";
+import SpecificationFive from "./SpecificationFive";
 
 const WaterPurifier = () => {
   const headerData = {
@@ -31,6 +32,7 @@ const WaterPurifier = () => {
       <SpecificationTwo productDataTwo = {productDataTwo}/>
       <SpecificationThree productDataThree= {productDataThree} />
       <SpecificationFour productDataFour={productDataFour} />
+      <SpecificationFive /> 
 
       
 
