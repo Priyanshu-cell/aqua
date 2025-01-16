@@ -3,18 +3,18 @@ import React from "react";
 const HomeProducts = () => {
   const products = [
     {
-      heading: "Need no service for two years",
+      heading: "Pre-filter to remove large particles",
       img: "/home-products/water-purifier.png",
-      name: "Aquaguard",
-      offers: "10% instant discount",
-      button: "Shop Now",
+      name: "Gravity purifier",
+      offers: "Eco-Friendly",
+      button: "Explore Now",
       bgClass: "bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500",
     },
     {
-      heading: "Long-lasting Performance",
+      heading: "Storage purifier uv based",
       img: "/home-products/water-purifier.png",
-      name: "Pureit",
-      offers: "15% cashback offer",
+      name: "Aquafresh UV-Based Storage Purifier",
+      offers: "Chemical-Free Purification:",
       button: "Explore Now",
       bgClass: "bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600",
     },
