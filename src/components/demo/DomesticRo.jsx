@@ -10,8 +10,11 @@ import productDataSix from "../../data/domestic-ro/six.json";
 import productDataSeven from "../../data/domestic-ro/seven.json";
 import productDataEight from "../../data/domestic-ro/eight.json";
 import productDataNine from "../../data/domestic-ro/nine.json";
+
 import DomesticRoThree from "./DomesticRoThree";
 import DomesticRoFour from "./DomesticRoFour";
+import DomesticRoFive from "./DomesticRoFive";
+import DomesticRoSeven from "./DomesticRoSeven";
 
 const DomesticRo = () => {
   const headerData = {
@@ -28,11 +31,16 @@ const DomesticRo = () => {
       <DomesticRoOne productDataOne={productDataOne} />
       <DomesticRoOne productDataOne={productDataTwo} />
 
-
       <DomesticRoThree productData={productDataThree} />
       <DomesticRoFour productDataFour = {productDataFour}/>
 
+      <DomesticRoFive productDataFive= {productDataFive}/>
+      <DomesticRoFive productDataFive= {productDataSix}/>
 
+      <DomesticRoSeven productDataSeven = {productDataSeven}/>
+      <DomesticRoSeven productDataSeven = {productDataEight}/>
+      <DomesticRoSeven productDataSeven = {productDataNine}/>
+      
     </>
   );
 };
