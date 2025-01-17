@@ -110,8 +110,8 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/faq"
+                <Link 
+                  to="/about"
                   className="hover:text-[#D4AF37] transition duration-300"
                 >
                   FAQ

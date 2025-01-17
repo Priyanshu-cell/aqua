@@ -13,13 +13,15 @@ const AboutTopBanner = () => {
         {/* Main Content */}
         <div className="relative flex flex-col items-center text-center justify-center px-6 md:px-10 lg:px-20 pt-10md:py-10 font-mono">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Get To Know Inside
+            About Us  "Shreeansh Aqua Solutions"
           </h1>
 
           <p className="text-base md:text-xl text-gray-200 mb-6 max-w-3xl font-semibold">
-            We are established with a motto to offer complete technical
-            solutions in water treatment from concept stage to commissioning
-            stage with the best engineering standards and specifications.
+            Welcome to Shreeansh Aqua Solutions, the most trusted name in RO
+            water purifier sales, service, and maintenance in Dehradun. With
+            over 15 years of expertise, we specialize in providing complete
+            water purification solutions for domestic, commercial, and
+            industrial purposes.
           </p>
 
           {/* Button */}
@@ -34,22 +36,11 @@ const AboutTopBanner = () => {
           {/* Heading Section */}
           <div className="mb-6">
             <h3 className="text-2xl md:text-3xl font-bold font-mono text-gray-800 text-center md:text-center">
-              We are the brainchild of an able promoter who has built our
-              industry with strong values and broad vision
+            We understand the importance of clean, pure, and healthy water for your well-being. That’s why our highly skilled team offers top-notch services across all major RO brands, including Aquaguard, Kent, HUL Pureit, Livpure, AO Smith, and many more.
             </h3>
             <span></span>
           </div>
 
-          {/* Paragraph Section */}
-          <div>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
-              Our company has consistently demonstrated the ability to meet the
-              customer at all levels. We adopt the most stringent quality
-              assurance standards. Our range of products is subjected to various
-              tests of excellence developed by our quality control team to
-              ensure they are flawless before dispatch.
-            </p>
-          </div>
         </div>
       </div>
     </>

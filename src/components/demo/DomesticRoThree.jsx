@@ -23,7 +23,7 @@ const DomesticRoThree = ({ productData }) => {
 
         {/* Specifications */}
         <div className="bg-yellow-900 p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-semibold mb-6 text-white">Specifications:</h3>
+          <h3 className="text-3xl font-semibold mb-6 sub-heading">Specifications:</h3>
           <ul className="space-y-4">
             {/* Dynamically render stages of purification */}
             {productData.specifications?.purificationTechnology?.map((tech, index) => (
@@ -37,7 +37,7 @@ const DomesticRoThree = ({ productData }) => {
                 {Object.entries(stage).map(([key, value]) => (
                   <div key={key}>
                     <strong className="text-xl text-indigo-400 capitalize">{key}: </strong>
-                    <span className="text-black">{value}</span>
+                    <span className="paragraph">{value}</span>
                   </div>
                 ))}
               </li>

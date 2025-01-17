@@ -25,7 +25,7 @@ const DomesticRoOne = ({ productDataOne }) => {
 
         {/* Specifications */}
         <div className="bg-yellow-900 p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-semibold mb-6 text-white">Specifications:</h3>
+          <h3 className="text-3xl font-semibold mb-6 sub-heading">Specifications:</h3>
           <ul className="space-y-4">
             {/* Dynamically render stages of purification */}
             {productDataOne.specifications.stagesOfPurification.map((stage, index) => (
@@ -33,7 +33,7 @@ const DomesticRoOne = ({ productDataOne }) => {
                 {Object.entries(stage).map(([key, value]) => (
                   <div key={key}>
                     <strong className="text-xl text-indigo-400 capitalize">{key}: </strong>
-                    <span className="text-black">{value}</span>
+                    <span className="paragraph">{value}</span>
                   </div>
                 ))}
               </li>
@@ -42,9 +42,9 @@ const DomesticRoOne = ({ productDataOne }) => {
             {Object.entries(productDataOne.specifications).map(([key, value]) => {
               if (key === 'stagesOfPurification') return null; // Already rendered stagesOfPurification
               return (
-                <li key={key} className="text-lg text-black">
+                <li key={key} className="text-lg paragraph">
                   <strong className="text-xl text-indigo-400 capitalize">{key.replace(/([A-Z])/g, ' $1')}: </strong>
-                  <span className="text-black">{value}</span>
+                  <span className="paragraph">{value}</span>
                 </li>
               );
             })}

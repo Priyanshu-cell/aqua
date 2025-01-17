@@ -25,7 +25,7 @@ const DomesticRoFour = ({ productDataFour }) => {
 
         {/* Specifications */}
         <div className="bg-yellow-900 p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-semibold mb-6 text-white">Specifications:</h3>
+          <h3 className="text-3xl font-semibold mb-6 sub-heading">Specifications:</h3>
           <ul className="space-y-4">
             {Object.entries(productDataFour.specifications).map(([key, value]) => {
               if (Array.isArray(value)) {
@@ -34,16 +34,16 @@ const DomesticRoFour = ({ productDataFour }) => {
                     <strong className="text-xl text-indigo-400 capitalize">{key.replace(/([A-Z])/g, ' $1')}: </strong>
                     <ul className="list-disc pl-6">
                       {value.map((item, index) => (
-                        <li key={index} className="text-black">{item}</li>
+                        <li key={index} className="paragraph">{item}</li>
                       ))}
                     </ul>
                   </li>
                 );
               } else {
                 return (
-                  <li key={key} className="text-lg text-black">
+                  <li key={key} className="text-lg paragraph">
                     <strong className="text-xl text-indigo-400 capitalize">{key.replace(/([A-Z])/g, ' $1')}: </strong>
-                    <span className="text-black">{value}</span>
+                    <span className="paragraph">{value}</span>
                   </li>
                 );
               }

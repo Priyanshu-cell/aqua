@@ -25,7 +25,7 @@ const SpecificationTwo = ({ productDataTwo }) => {
 
         {/* Specifications */}
         <div className="bg-yellow-900 p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-semibold mb-6 text-white">Specifications:</h3>
+          <h3 className="text-3xl font-semibold mb-6 sub-heading">Specifications:</h3>
           <ul className="space-y-4">
             {/* Dynamically render specifications */}
             {Object.entries(productDataTwo.specifications).map(([key, value]) => (
@@ -34,11 +34,11 @@ const SpecificationTwo = ({ productDataTwo }) => {
                 {Array.isArray(value) ? (
                   <ul className="list-disc pl-6 space-y-1">
                     {value.map((item, index) => (
-                      <li key={index} className="text-black">{item}</li>
+                      <li key={index} className="paragraph">{item}</li>
                     ))}
                   </ul>
                 ) : (
-                  <span className="text-black">{value}</span>
+                  <span className="paragraph">{value}</span>
                 )}
               </li>
             ))}

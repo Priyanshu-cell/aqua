@@ -21,3 +21,22 @@
 .product-background-related {
   background: linear-gradient(to top, #2e3a46, #1d252d);
 }
+.sub-heading{
+  color: #5ec472;
+}
+.paragraph{
+  color: white
+}
+
+.animate-scroll {
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

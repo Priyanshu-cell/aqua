@@ -16,24 +16,17 @@ const AboutWhyUs = () => {
       >
         {/* Text Section */}
         <div className="text-gray-800 md:pl-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1B1F3B] text-center font-mono">
-            Why Us?
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0f1222] text-center font-mono">
+          Why Choose Shreeansh Aqua Solutions?
           </h2>
-          <p className= " text-base md:text-lg leading-relaxed mb-6 font-sans text-justify">
-            We have on the record a number of positive attributes that have made
-            us a remarkable industry earning reputation. Very soon, we hope our
-            dreams of attaining a global position become true. We are true to
-            our conscience and focus all our attention on taking our company to
-            greater heights. Our positive attributes include:
-          </p>
+          
           <ul className="list-disc list-inside space-y-2 text-base md:text-lg">
             {[
-              "A quality-conscious mind that has developed quintessence products",
-              "An innovative and technical background",
-              "An experienced and talented workforce",
-              "A guiding factor with a developmental attitude",
-              "Prompt and quick services",
-              "Transparency in the system",
+              "Experienced Professionals: Our team consists of trained and certified service engineers dedicated to providing 100% satisfactory services.",
+              " Affordable Services: We offer budget-friendly pricing for all our services without compromising on quality.",
+              "Wide Range of Solutions: From RO installation, repair, maintenance, and AMC services, we cover it all under one roof.",
+              "We ensure quick response and doorstep service to keep your purifier running smoothly.",
+              "Customer Satisfaction: Your satisfaction is our top priority. We focus on long-term relationships with our clients.",
             ].map((item, index) => (
               <li key={index} className="animate-fade-in-up text-justify">
                 {item}

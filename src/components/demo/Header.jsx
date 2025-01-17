@@ -143,6 +143,12 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <div className="bg-red-600 text-white py-2 overflow-hidden">
+      <div className="whitespace-nowrap animate-scroll text-sm md:text-lg font-medium">
+        Drink Healthy. Live Healthy. Choose <b>Shreeansh Aqua Solutions!</b> Phone:
+        +91-7579008065, Dehradun, Uttarakhand
+      </div>
+    </div>
     </div>
   );
 };

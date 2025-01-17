@@ -23,7 +23,7 @@ const SpecificationFour = ({ productDataFour }) => {
 
       {/* Specifications Section */}
       <div className="bg-yellow-900 p-6 md:p-8 rounded-lg shadow-md space-y-6">
-        <h3 className="text-2xl md:text-3xl font-semibold text-white">Specifications</h3>
+        <h3 className="text-2xl md:text-3xl font-semibold sub-heading">Specifications</h3>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {Object.entries(productDataFour.specifications).map(([key, value]) => (
             <li key={key} className="text-lg black">
@@ -33,19 +33,19 @@ const SpecificationFour = ({ productDataFour }) => {
               {Array.isArray(value) ? (
                 <ul className="list-disc pl-6 space-y-1">
                   {value.map((item, index) => (
-                    <li key={index} className="text-black">{item}</li>
+                    <li key={index} className="paragraph">{item}</li>
                   ))}
                 </ul>
               ) : typeof value === "object" ? (
                 <ul className="list-disc pl-6 space-y-1">
                   {Object.entries(value).map(([subKey, subValue]) => (
-                    <li key={subKey} className="text-black">
+                    <li key={subKey} className="paragraph">
                       <strong className="capitalize">{subKey.replace(/([A-Z])/g, " $1")}: </strong>{subValue}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <span className="black">{value}</span>
+                <span className="paragraph">{value}</span>
               )}
             </li>
           ))}
