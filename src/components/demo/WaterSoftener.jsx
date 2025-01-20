@@ -1,4 +1,5 @@
 import WaterHeader from "./WaterHeader";
+import WaterSoftenerContent from "./WaterSoftenerContent";
 
 const WaterSoftener = () => {
   const headerData = {
@@ -12,7 +13,7 @@ const WaterSoftener = () => {
   return (
     <>
       <WaterHeader {...headerData} />
-      
+      {/* <WaterSoftenerContent /> */}
     </>
   );
 };
