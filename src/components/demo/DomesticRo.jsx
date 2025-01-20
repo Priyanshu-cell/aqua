@@ -19,10 +19,10 @@ import DomesticRoSeven from "./DomesticRoSeven";
 const DomesticRo = () => {
   const headerData = {
     title: "Domestic RO",
-    img: "/home-products/water-purifier.png",
-    firstDetails: "Suitable for Municipal, Borewell & ",
-    secondDetails: "Tanker water.",
-    bold: "TDS from 0—2000 mg/l",
+    img: "/domestic-ro/img-9.jpg",
+    firstDetails: "Suitable for homes, offices,",
+    secondDetails: " and small businesses.",
+    bold: "Capacity from 5 liters to 20 liters",
   };
 
   return (
@@ -32,15 +32,14 @@ const DomesticRo = () => {
       <DomesticRoOne productDataOne={productDataTwo} />
 
       <DomesticRoThree productData={productDataThree} />
-      <DomesticRoFour productDataFour = {productDataFour}/>
+      <DomesticRoFour productDataFour={productDataFour} />
 
-      <DomesticRoFive productDataFive= {productDataFive}/>
-      <DomesticRoFive productDataFive= {productDataSix}/>
+      <DomesticRoFive productDataFive={productDataFive} />
+      <DomesticRoFive productDataFive={productDataSix} />
 
-      <DomesticRoSeven productDataSeven = {productDataSeven}/>
-      <DomesticRoSeven productDataSeven = {productDataEight}/>
-      <DomesticRoSeven productDataSeven = {productDataNine}/>
-
+      <DomesticRoSeven productDataSeven={productDataSeven} />
+      <DomesticRoSeven productDataSeven={productDataEight} />
+      <DomesticRoSeven productDataSeven={productDataNine} />
     </>
   );
 };

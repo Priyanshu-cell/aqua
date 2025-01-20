@@ -9,10 +9,10 @@ import CommercialRoOne from "./CommercialRoOne";
 const CommercialRo = () => {
   const headerData = {
     title: "Commercial RO",
-    img: "/home-products/water-purifier.png",
-    firstDetails: "Suitable for Municipal, Borewell & ",
-    secondDetails: "Tanker water.",
-    bold: "capacity from 25 liters to 100 liters / hour",
+    img: "/commercial-ro/img-4.png",
+    firstDetails: "Ideal for small to medium-sized businesses, restaurants",
+    secondDetails: "offices, and commercial establishments.",
+    bold: "Capacity from 25 liters to 100 liters / hour",
   };
 
   return (

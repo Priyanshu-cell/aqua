@@ -11,9 +11,9 @@ import IndustrialRoFour from "./IndustrialRoFour";
 const IndustrialRo = () => {
   const headerData = {
     title: "Industrial RO",
-    img: "/home-products/water-purifier.png",
-    firstDetails: "Suitable for Municipal, Borewell & ",
-    secondDetails: "Tanker water.",
+    img: "/industrial-ro/img-3.png",
+    firstDetails: "Ideal for small to medium-sized businesses,",
+    secondDetails: "offices, schools, and industries.",
     bold: "Capacity from 250 liters and above / hour",
   };
 

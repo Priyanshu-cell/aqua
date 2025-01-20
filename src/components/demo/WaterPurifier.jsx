@@ -1,8 +1,8 @@
 import WaterHeader from "./WaterHeader.jsx";
-import productData from "../../data/water/first.json"
-import productDataTwo from "../../data/water/second.json" 
-import productDataThree from "../../data/water/third.json" 
-import productDataFour from "../../data/water/forth.json" 
+import productData from "../../data/water/first.json";
+import productDataTwo from "../../data/water/second.json";
+import productDataThree from "../../data/water/third.json";
+import productDataFour from "../../data/water/forth.json";
 import Specification from "./Specification.jsx";
 import SpecificationTwo from "./SpecificationTwo";
 import SpecificationThree from "./SpecificationThree";
@@ -12,28 +12,20 @@ import SpecificationFive from "./SpecificationFive";
 const WaterPurifier = () => {
   const headerData = {
     title: "Water Purifier",
-    img: "/home-products/water-purifier.png",
-    firstDetails: "Suitable for Municipal, Borewell & ",
-    secondDetails: "Tanker water.",
-    bold: "TDS from 0—2000 mg/l",
+    img: "/water-purifier/img-1.png",
+    firstDetails: "Suitable for Home, Office & ",
+    secondDetails: "Any place with Customizable Purifier.",
+    bold: "Removes contaminants such as heavy metals, chlorine, and other impurities",
   };
-
-  const title = "Water Purifier";
 
   return (
     <>
       <WaterHeader {...headerData} />
-      {/* <Products itemData={itemData} title={title} /> */}
-
-      <Specification productData = {productData} />
-      <SpecificationTwo productDataTwo = {productDataTwo}/>
-      <SpecificationThree productDataThree= {productDataThree} />
+      <Specification productData={productData} />
+      <SpecificationTwo productDataTwo={productDataTwo} />
+      <SpecificationThree productDataThree={productDataThree} />
       <SpecificationFour productDataFour={productDataFour} />
-      <SpecificationFive /> 
-
-      
-
-      {/* <Item /> */}
+      <SpecificationFive />
     </>
   );
 };

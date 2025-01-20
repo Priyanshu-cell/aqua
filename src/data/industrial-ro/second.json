@@ -1,6 +1,6 @@
 {
   "name": "500 LPH RO System",
-  "image": "/industrial-ro/img-2.jpg",
+  "image": "/industrial-ro/img-2.png",
   "specifications": {
     "flowRate": "500 liters per hour",
     "recoveryRate": "Typically around 50-75%, meaning it can recover 50-75% of the input water as pure water.",
