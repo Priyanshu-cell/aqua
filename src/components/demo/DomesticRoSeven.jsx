@@ -1,5 +1,3 @@
-import React from "react";
-
 const DomesticRoSeven = ({ productDataSeven }) => {
   if (!productDataSeven) {
     return (

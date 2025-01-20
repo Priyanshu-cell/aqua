@@ -1,6 +1,3 @@
-import itemData from "../../data/water-purifier.json";
-import Item from "./Item.jsx";
-import Products from "./ProductData.jsx";
 import WaterHeader from "./WaterHeader.jsx";
 import productData from "../../data/water/first.json"
 import productDataTwo from "../../data/water/second.json" 

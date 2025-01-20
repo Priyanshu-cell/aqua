@@ -15,7 +15,7 @@ const SpecificationFive = () => {
         {/* Image Section */}
         <div className="flex justify-center lg:w-1/2">
           <img
-            src="/water-purifier/img-6.jpg"
+            src="/water-purifier/img-5.png"
             alt="Industrial Water Purifier"
             className="w-full max-w-xl rounded-lg shadow-lg transform transition-transform hover:scale-105"
           />

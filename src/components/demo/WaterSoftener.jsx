@@ -1,5 +1,3 @@
-import itemData from "../../data/water-softener.json";
-import Products from "./ProductData.jsx";
 import WaterHeader from "./WaterHeader";
 
 const WaterSoftener = () => {
@@ -11,11 +9,10 @@ const WaterSoftener = () => {
     bold: "TDS from 0—2000 mg/l",
   };
 
-  const title = "Water Softener";
   return (
     <>
       <WaterHeader {...headerData} />
-      <Products itemData={itemData} title={title} />
+      
     </>
   );
 };

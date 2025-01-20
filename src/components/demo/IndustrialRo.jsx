@@ -1,6 +1,12 @@
-import itemData from "../../data/industrial-ro.json";
-import Products from "./ProductData";
 import WaterHeader from "./WaterHeader";
+
+import firstData from "../../data/industrial-ro/first.json";
+import secondData from "../../data/industrial-ro/second.json";
+import thirdData from "../../data/industrial-ro/third.json";
+import forthData from "../../data/industrial-ro/forth.json";
+
+import IndustrialRoOne from "./IndustrialRoOne";
+import IndustrialRoFour from "./IndustrialRoFour";
 
 const IndustrialRo = () => {
   const headerData = {
@@ -8,14 +14,17 @@ const IndustrialRo = () => {
     img: "/home-products/water-purifier.png",
     firstDetails: "Suitable for Municipal, Borewell & ",
     secondDetails: "Tanker water.",
-    bold: "TDS from 0—2000 mg/l",
+    bold: "Capacity from 250 liters and above / hour",
   };
 
-  const title = "Industrial RO";
   return (
     <>
       <WaterHeader {...headerData} />
-      <Products itemData={itemData} title={title} />
+
+      <IndustrialRoOne firstData={firstData} />
+      <IndustrialRoOne firstData={secondData} />
+      <IndustrialRoOne firstData={thirdData} />
+      <IndustrialRoFour forthData = {forthData}/>
     </>
   );
 };
