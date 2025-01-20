@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import emailjs from "emailjs-com";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -7,6 +9,8 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,23 +26,57 @@ const ContactForm = () => {
       alert("Please enter a valid 10-digit phone number.");
       return;
     }
-    
-    console.log("Form submitted", formData);
-    alert("Thank you for reaching out! We'll get back to you soon.");
+
+    setLoading(true);
+
+    // EmailJS configuration
+    const serviceID = "service_fnoqfza";
+    const templateID = "template_twfnykq";
+    const publicKey = "JZos9xujur1Q4KbqF";
+
+    emailjs
+      .send(
+        serviceID,
+        templateID,
+        {
+          from_name: formData.name,
+          name: formData.name,
+          number: formData.number,
+          adderss: formData.address,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          alert("Thank you for reaching out! We'll get back to you soon.");
+          setFormData({
+            name: "",
+            number: "",
+            address: "",
+            subject: "",
+            message: "",
+          });
+          setLoading(false);
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          alert("Failed to send your message. Please try again.");
+          setLoading(false);
+        }
+      );
   };
 
   return (
     <section className="contact-form bg-gray-100 p-6 sm:p-12 lg:p-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-        
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold text-gray-700 mb-6">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-600 mb-1"
-              >
+              <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-1">
                 Name
               </label>
               <input
@@ -54,10 +92,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="number"
-                className="block text-sm font-medium text-gray-600 mb-1"
-              >
+              <label htmlFor="number" className="block text-sm font-medium text-gray-600 mb-1">
                 Phone Number
               </label>
               <input
@@ -74,10 +109,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="address"
-                className="block text-sm font-medium text-gray-600 mb-1"
-              >
+              <label htmlFor="address" className="block text-sm font-medium text-gray-600 mb-1">
                 Address
               </label>
               <input
@@ -93,10 +125,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="subject"
-                className="block text-sm font-medium text-gray-600 mb-1"
-              >
+              <label htmlFor="subject" className="block text-sm font-medium text-gray-600 mb-1">
                 Subject
               </label>
               <input
@@ -112,10 +141,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-600 mb-1"
-              >
+              <label htmlFor="message" className="block text-sm font-medium text-gray-600 mb-1">
                 Message
               </label>
               <textarea
@@ -132,8 +158,9 @@ const ContactForm = () => {
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+              disabled={loading}
             >
-              Submit
+              {loading ? "Sending..." : "Submit"}
             </button>
           </form>
         </div>
