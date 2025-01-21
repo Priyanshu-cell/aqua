@@ -4,10 +4,10 @@ import WaterSoftenerContent from "./WaterSoftenerContent";
 const WaterSoftener = () => {
   const headerData = {
     title: "Water Softener",
-    img: "/home-products/water-purifier.png",
-    firstDetails: "Suitable for Municipal, Borewell & ",
-    secondDetails: "Tanker water.",
-    bold: "TDS from 0—2000 mg/l",
+    img: "water-softener.jpg",
+    firstDetails: "A water softener removes minerals, like calcium and magnesium, to prevent scale buildup,",
+    secondDetails: "improve appliance efficiency, and enhance soap lathering",
+    bold: "Save money on cleaning products",
   };
 
   return (
