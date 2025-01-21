@@ -13,7 +13,7 @@ const WaterSoftener = () => {
   return (
     <>
       <WaterHeader {...headerData} />
-      {/* <WaterSoftenerContent /> */}
+      <WaterSoftenerContent />
     </>
   );
 };
