@@ -4,7 +4,6 @@ import {
   ScanIcon,
   ShoppingBagIcon,
 } from "lucide-react";
-import React from "react";
 
 const WhyUs = () => {
   const cardDetails = [
@@ -44,7 +43,7 @@ const WhyUs = () => {
         {cardDetails.map((product, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-start bg-white shadow-md rounded-lg p-3 md:p-6 hover:shadow-lg transition-all"
+            className="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-3 md:p-6 hover:shadow-lg transition-all"
           >
             {/* Logo */}
             <div className="mb-4">{product.logo}</div>
