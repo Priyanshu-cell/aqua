@@ -1,17 +1,6 @@
 const WaterSoftenerContent = () => {
   return (
     <div className="bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-300 shadow-xl space-y-8 w-full p-6 md:p-12 lg:px-32 mx-auto product-background">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
-        WATER SOFTENER
-      </h2>
-
-      <div className="flex justify-center">
-        <img
-          src="water-softener.jpg"
-          alt="Water Softener"
-          className="w-full md:w-2/3 lg:w-1/2 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
-        />
-      </div>
 
       <div className="text-white text-base md:text-lg leading-relaxed text-justify font-sans space-y-6">
         <p>
