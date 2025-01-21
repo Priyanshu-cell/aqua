@@ -1,3 +1,4 @@
+import AboutClient from "@/components/demo/AboutClient";
 import GoogleReview from "@/components/demo/GoogleReview";
 import HomeClint from "@/components/demo/HomeClint";
 import HomeProducts from "@/components/demo/HomeProducts";
@@ -12,8 +13,9 @@ const Home = () => {
       <SectionHero />
       <HomeProducts />
       <WhyUs />
-      <HomeClint />
-      <GoogleReview />
+      {/* <HomeClint /> */}
+      <AboutClient />
+      {/* <GoogleReview /> */}
     </>
   );
 };
