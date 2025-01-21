@@ -9,23 +9,23 @@ const WhyUs = () => {
   const cardDetails = [
     {
       logo: <PercentDiamond size={30} className="text-blue-500" />,
-      details: "Instant Discount",
-      info: "A quality conscious mind that has developed quintessence products",
+      details: "Experienced Professionals",
+      info: "Our team consists of trained and certified service engineers",
     },
     {
       logo: <ScanIcon size={30} className="text-green-500" />,
-      details: "Quick Scan",
-      info: "Seamless scanning for easy payments",
+      details: "Affordable Services",
+      info: "We offer budget-friendly pricing for all our services",
     },
     {
       logo: <ShoppingBagIcon size={30} className="text-orange-500" />,
-      details: "Wide Range",
-      info: "Shop from a variety of products",
+      details: "Wide Range of Solutions",
+      info: "From RO installation, repair, maintenance, and AMC services",
     },
     {
       logo: <Calendar1Icon size={30} className="text-purple-500" />,
-      details: "Easy Returns",
-      info: "30-day hassle-free returns",
+      details: "Customer Satisfaction",
+      info: "We focus on long-term relationships with our clients",
     },
   ];
 
