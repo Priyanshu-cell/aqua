@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center p-8 bg-gray-100">
         {/* Left Section */}
         <div className="text-center md:text-left space-y-6">
-          <h1 className="text-4xl font-bold font-mono text-gray-800">
+          <h1 className="text-4xl font-bold text-gray-800">
             How we works
           </h1>
           <p className="text-lg text-gray-600">

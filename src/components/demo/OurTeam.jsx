@@ -2,7 +2,7 @@ const OurTeam = () => {
   return (
     <div className="bg-gray-200 py-10 px-6">
       <div className="mx-auto text-center max-w-6xl md:px-8">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1B1F3B] mb-6 tracking-wide font-mono">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1B1F3B] mb-6 tracking-wide">
         Why Regular RO Service is Important?
         </h2>
         <div className="text-gray-700 text-base md:text-lg leading-relaxed text-justify font-sans space-y-6">

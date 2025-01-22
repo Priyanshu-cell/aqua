@@ -1,6 +1,7 @@
 import AboutClient from "@/components/demo/AboutClient";
 import GoogleReview from "@/components/demo/GoogleReview";
 import HomeClint from "@/components/demo/HomeClint";
+import HomeFandQ from "@/components/demo/HomeFandQ";
 import HomeProducts from "@/components/demo/HomeProducts";
 import { SectionHero } from "@/components/demo/SectionHero.jsx";
 import TopSection from "@/components/demo/TopSection.jsx";
@@ -13,8 +14,9 @@ const Home = () => {
       <SectionHero />
       <HomeProducts />
       <WhyUs />
-      {/* <HomeClint /> */}
+      <HomeClint />
       <AboutClient />
+      <HomeFandQ />
       {/* <GoogleReview /> */}
     </>
   );

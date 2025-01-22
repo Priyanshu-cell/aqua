@@ -5,7 +5,7 @@ const AboutServices = () => {
     <div className="bg-gray-50 py-10 px-6">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-indigo-800 mb-4 font-mono">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-indigo-800 mb-4">
           Our Services
         </h2>
         <p className="text-gray-600 text-lg">

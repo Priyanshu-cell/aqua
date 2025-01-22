@@ -89,7 +89,7 @@ const FandQ = () => {
     <div className="bg-gray-50 py-10 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 font-mono text-center">
+        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
           Frequently Asked Questions (FAQs)
         </h3>
 

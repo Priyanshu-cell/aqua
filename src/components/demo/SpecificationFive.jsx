@@ -5,7 +5,7 @@ const SpecificationFive = () => {
     <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-12 px-6 lg:px-16">
       {/* Title */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-center text-white hover:text-indigo-600 transition duration-300 ease-in-out">
           Industrial Water Purifier
         </h2>
       </div>

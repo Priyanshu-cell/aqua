@@ -4,7 +4,7 @@ const AboutClient = () => {
       <div className="max-w-6xl mx-auto px-6 sm:px-6 md:px-10 font-sans text-center">
         {/* Section Heading */}
         <div className="text-center mb-8 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-mono">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Top RO Brands We Service:
           </h2>
         </div>

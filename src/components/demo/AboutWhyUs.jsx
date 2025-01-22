@@ -16,7 +16,7 @@ const AboutWhyUs = () => {
       >
         {/* Text Section */}
         <div className="text-gray-800 md:pl-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0f1222] text-center font-mono">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0f1222] text-center">
           Why Choose Shreeansh Aqua Solutions?
           </h2>
           
