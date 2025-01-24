@@ -8,13 +8,13 @@ const Specification = ({ productData }) => {
       </h2>
 
       {/* Product Image and Specifications Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {/* Product Image */}
         <div className="flex justify-center items-center">
           <img
             src={productData.image}
             alt={productData.name}
-            className="w-full h-80 object-contain rounded-xl shadow-lg transition-transform transform hover:scale-105"
+            className="w-full h-70 object-contain rounded-xl shadow-lg transition-transform transform hover:scale-105 lg:size-[40rem]"
           />
         </div>
 

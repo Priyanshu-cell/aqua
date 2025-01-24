@@ -8,6 +8,7 @@ import SpecificationTwo from "./SpecificationTwo";
 import SpecificationThree from "./SpecificationThree";
 import SpecificationFour from "./SpecificationFour";
 import SpecificationFive from "./SpecificationFive";
+import WaterHeaderNext from "./WaterHeaderNext.jsx";
 
 const WaterPurifier = () => {
   const headerData = {
@@ -17,10 +18,18 @@ const WaterPurifier = () => {
     secondDetails: "Any place with Customizable Purifier.",
     bold: "Removes contaminants such as heavy metals, chlorine, and other impurities",
   };
+  const headerData2 = {
+    title: "Water Purifier",
+    img: "water-purifier.jpg",
+    firstDetails: "A water softener removes minerals, like calcium and magnesium, to prevent scale buildup,",
+    secondDetails: "improve appliance efficiency, and enhance soap lathering",
+    bold: "Save money on cleaning products",
+  };
 
   return (
     <>
-      <WaterHeader {...headerData} />
+      {/* <WaterHeader {...headerData} /> */}
+      <WaterHeaderNext {...headerData2} />
       <Specification productData={productData} />
       <SpecificationTwo productDataTwo={productDataTwo} />
       <SpecificationThree productDataThree={productDataThree} />

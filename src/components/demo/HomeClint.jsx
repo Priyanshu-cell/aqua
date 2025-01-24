@@ -2,10 +2,7 @@ import React from "react";
 
 const HomeClint = () => {
   const clients = [
-    {
-      img: "/aboutus/client-logo/logo-8.png",
-      alt: "Venky-s India",
-    },
+    {img: "/aboutus/client-logo/logo-8.png",alt: "Venky-s India"},
     { img: "/aboutus/client-logo/logo-1.png", alt: "UK Logo" },
     { img: "/aboutus/client-logo/logo-2.png", alt: "VH Logo" },
     { img: "/aboutus/client-logo/logo-3.png", alt: "Sarovar" },
@@ -16,7 +13,7 @@ const HomeClint = () => {
   ];
 
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-8">
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-medium text-gray-700">
           Our some of <span className="font-bold">The Privilege Customers</span>

@@ -1,5 +1,6 @@
 import AboutClient from "@/components/demo/AboutClient";
 import GoogleReview from "@/components/demo/GoogleReview";
+import HomeClient2 from "@/components/demo/HomeClient2";
 import HomeClint from "@/components/demo/HomeClint";
 import HomeFandQ from "@/components/demo/HomeFandQ";
 import HomeProducts from "@/components/demo/HomeProducts";
@@ -15,8 +16,9 @@ const Home = () => {
       <HomeProducts />
       <WhyUs />
       <HomeClint />
+      <HomeClient2 />
       <AboutClient />
-      <HomeFandQ />
+      {/* <HomeFandQ /> */}
       {/* <GoogleReview /> */}
     </>
   );

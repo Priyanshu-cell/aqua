@@ -1,4 +1,5 @@
 import WaterHeader from "./WaterHeader";
+import WaterHeaderNext from "./WaterHeaderNext";
 import WaterSoftenerContent from "./WaterSoftenerContent";
 
 const WaterSoftener = () => {
@@ -9,10 +10,18 @@ const WaterSoftener = () => {
     secondDetails: "improve appliance efficiency, and enhance soap lathering",
     bold: "Save money on cleaning products",
   };
+  const headerData2 = {
+    title: "Water Softener",
+    img: "water-softener.png",
+    firstDetails: "A water softener removes minerals, like calcium and magnesium, to prevent scale buildup,",
+    secondDetails: "improve appliance efficiency, and enhance soap lathering",
+    bold: "Save money on cleaning products",
+  };
 
   return (
     <>
-      <WaterHeader {...headerData} />
+      <WaterHeaderNext  {...headerData2}/>
+      {/* <WaterHeader {...headerData} /> */}
       <WaterSoftenerContent />
     </>
   );

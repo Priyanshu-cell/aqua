@@ -13,13 +13,13 @@ const DomesticRoFour = ({ productDataFour }) => {
       </h2>
 
       {/* Product Image and Specifications Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {/* Product Image */}
         <div className="flex justify-center items-center">
           <img
             src={productDataFour.image}
             alt={productDataFour.name}
-            className="w-full h-64 object-contain rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
+            className="w-full h-80 object-contain rounded-lg shadow-2xl transform transition duration-500 hover:scale-105 lg:size-[50rem]"
           />
         </div>
 

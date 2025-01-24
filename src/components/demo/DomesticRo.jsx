@@ -15,6 +15,7 @@ import DomesticRoThree from "./DomesticRoThree";
 import DomesticRoFour from "./DomesticRoFour";
 import DomesticRoFive from "./DomesticRoFive";
 import DomesticRoSeven from "./DomesticRoSeven";
+import WaterHeaderNext from "./WaterHeaderNext";
 
 const DomesticRo = () => {
   const headerData = {
@@ -25,9 +26,20 @@ const DomesticRo = () => {
     bold: "Capacity from 5 liters to 20 liters",
   };
 
+  const headerData2 = {
+    title: "Domestic RO",
+    img: "domestic-ro.jpg",
+    firstDetails: "A water softener removes minerals, like calcium and magnesium, to prevent scale buildup,",
+    secondDetails: "improve appliance efficiency, and enhance soap lathering",
+    bold: "Save money on cleaning products",
+  };
+
   return (
     <>
-      <WaterHeader {...headerData} />
+      {/* <WaterHeader {...headerData} /> */}
+
+      <WaterHeaderNext {...headerData2}/>
+
       <DomesticRoOne productDataOne={productDataOne} />
       <DomesticRoOne productDataOne={productDataTwo} />
 

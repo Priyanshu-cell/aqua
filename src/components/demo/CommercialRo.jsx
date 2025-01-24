@@ -5,6 +5,7 @@ import thirdData from "../../data/commercial/commercial3.json";
 import forthData from "../../data/commercial/commercial4.json";
 import fifthData from "../../data/commercial/commercial5.json";
 import CommercialRoOne from "./CommercialRoOne";
+import WaterHeaderNext from "./WaterHeaderNext";
 
 const CommercialRo = () => {
   const headerData = {
@@ -14,10 +15,15 @@ const CommercialRo = () => {
     secondDetails: "offices, and commercial establishments.",
     bold: "Capacity from 25 liters to 100 liters / hour",
   };
+  const headerData2 = {
+    title: "Commercial RO",
+    img: "commercial-ro.jpg",
+  };
 
   return (
     <>
-      <WaterHeader {...headerData} />
+      {/* <WaterHeader {...headerData} /> */}
+      <WaterHeaderNext {...headerData2}/>
       <CommercialRoOne firstData = {firstData}/>
       <CommercialRoOne firstData = {secondData}/>
       <CommercialRoOne firstData = {thirdData}/>
