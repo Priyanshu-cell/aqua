@@ -7,6 +7,7 @@ import forthData from "../../data/industrial-ro/forth.json";
 
 import IndustrialRoOne from "./IndustrialRoOne";
 import IndustrialRoFour from "./IndustrialRoFour";
+import WaterHeaderNext from "./WaterHeaderNext";
 
 const IndustrialRo = () => {
   const headerData = {
@@ -16,10 +17,15 @@ const IndustrialRo = () => {
     secondDetails: "offices, schools, and industries.",
     bold: "Capacity from 250 liters and above / hour",
   };
+  const headerData2 = {
+    title: "Industrial RO",
+    img: "industrial-ro.png",
+  };
 
   return (
     <>
-      <WaterHeader {...headerData} />
+      {/* <WaterHeader {...headerData} /> */}
+      <WaterHeaderNext  {...headerData2}/>
 
       <IndustrialRoOne firstData={firstData} />
       <IndustrialRoOne firstData={secondData} />

@@ -10,14 +10,14 @@ import WaterHeaderNext from "./WaterHeaderNext";
 const CommercialRo = () => {
   const headerData = {
     title: "Commercial RO",
-    img: "/commercial-ro/img-4.png",
+    img: "commercial-ro.png",
     firstDetails: "Ideal for small to medium-sized businesses, restaurants",
     secondDetails: "offices, and commercial establishments.",
     bold: "Capacity from 25 liters to 100 liters / hour",
   };
   const headerData2 = {
     title: "Commercial RO",
-    img: "commercial-ro.jpg",
+    img: "commercial-ro.png",
   };
 
   return (
