@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HomeProducts = () => {
   const products = [
     {
-      heading: "Advanced Purification: Multi-stage filtration",
+      heading: "Multi-stage filtration",
       img: "/domestic-ro/img-9.jpg",
       name: "Ozone RO Water Purifier",
       offers: "With a 16-liter storage capacity",
@@ -12,7 +12,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Storage purifier uv based",
-      img: "/water-purifier/img-3.png",
+      img: "/new/img-3.png",
       name: "Aquafresh UV-Based Storage Purifier",
       offers: "Chemical-Free Purification:",
       button: "Explore Now",
@@ -20,7 +20,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Removes up to 99% of dissolved salts, chemicals, and impurities",
-      img: "/industrial-ro/img-3.png",
+      img: "/new/img-1.png",
       name: "1000 LPH RO System",
       offers: "Reduces plastic waste associated with bottled water consumption",
       button: "Explore Now",
@@ -28,7 +28,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Stainless steel frame for durability and corrosion resistance.",
-      img: "/industrial-ro/img-2.png",
+      img: "/new/img-2.png",
       name: "500 LPH RO System",
       offers:
         "Removes up to 99% of contaminants including dissolved salts, bacteria, and viruses.",
@@ -38,7 +38,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Low power consumption for economical operation",
-      img: "domestic-ro/img-5.png",
+      img: "/new/img-4.png",
       name: "New Grand Plus with UF & Minerals",
       offers: "Suitable for domestic use, providing safe drinking water for households",
       button: "Explore Now",
@@ -46,7 +46,7 @@ const HomeProducts = () => {
     },
     {
       heading: "Low Maintenance",
-      img: "/water-purifier/img-2.png",
+      img: "/new/img-5.png",
       name: "Hi-flow Water Purifier System",
       offers: "Standardized connections for easy installation",
       button: "Explore Now",
@@ -64,15 +64,15 @@ const HomeProducts = () => {
         {products.map((product, index) => (
           <div
             key={index}
-            className={`${product.bgClass} p-4 rounded-lg shadow-md flex flex-col`}
+            className={`${product.bgClass} lg:p-4 py-4 px-2 rounded-lg shadow-md flex flex-col`}
           >
-            <h2 className="text-2xl md:text-2xl font-semibold mb-3">
+            <h2 className="text-xl md:text-2xl text-center font-semibold mb-3">
               {product.heading}
             </h2>
             <img
               src={product.img}
               alt={product.name}
-              className="w-full h-80 object-contain mb-3"
+              className="w-full lg:h-80 object-contain mb-3"
             />
             <p className="text-xl font-medium">{product.name}</p>
             <p className="text-sm text-gray-900 font-bold mb-4">{product.offers}</p>

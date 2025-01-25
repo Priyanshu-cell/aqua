@@ -18,14 +18,14 @@ const Services = () => {
           <Link key={id} to={`${url}`}>
           <div className="transform transition-transform hover:scale-105">
             <Card className="cursor-pointer bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center font-semibold text-2xl text-gradient bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+              <CardHeader className="text-center font-semibold text-3xl text-white bg-gradient-to-r bg-clip-text">
                 {title}
               </CardHeader>
               <CardContent className="flex justify-center items-center py-6 px-1">
                 <img
                   src={image}
                   alt={title}
-                  className="md:w-40 md:h-40 lg:size-[50rem] object-contain"
+                  className="md:w-40 md:h-40 lg:size-[30rem] object-contain"
                 />
               </CardContent>
               <CardFooter className="text-center justify-center text-yellow-400 font-medium hover:text-yellow-500">
