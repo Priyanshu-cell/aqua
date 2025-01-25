@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
 const HomeProducts = () => {
-  const products = [
+  const products = [ 
     {
-      heading: "Multi-stage filtration",
-      img: "/domestic-ro/img-9.jpg",
-      name: "Ozone RO Water Purifier",
-      offers: "With a 16-liter storage capacity",
+      heading: "Low power consumption for economical operation",
+      img: "/new/img-4.png",
+      name: "New Grand Plus with UF & Minerals",
+      offers: "Suitable for domestic use, providing safe drinking water for households",
       button: "Explore Now",
-      bgClass: "bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500",
+      bgClass: "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700",
     },
     {
       heading: "Storage purifier uv based",
@@ -37,12 +37,12 @@ const HomeProducts = () => {
         "bg-gradient-to-r from-yellow-500 via-yellow-550 to-yellow-600",
     },
     {
-      heading: "Low power consumption for economical operation",
-      img: "/new/img-4.png",
-      name: "New Grand Plus with UF & Minerals",
-      offers: "Suitable for domestic use, providing safe drinking water for households",
+      heading: "Multi-stage filtration",
+      img: "/domestic-ro/img-9.jpg",
+      name: "Ozone RO Water Purifier",
+      offers: "With a 16-liter storage capacity",
       button: "Explore Now",
-      bgClass: "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700",
+      bgClass: "bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500",
     },
     {
       heading: "Low Maintenance",
@@ -72,13 +72,13 @@ const HomeProducts = () => {
             <img
               src={product.img}
               alt={product.name}
-              className="w-full lg:h-80 object-contain mb-3"
+              className="w-full lg:h-96 object-contain mb-3"
             />
             <p className="text-xl font-medium">{product.name}</p>
             <p className="text-sm text-gray-900 font-bold mb-4">{product.offers}</p>
-            <Link to="/services">
+            <Link to="/services" className="flex lg:justify-center">
               {" "}
-              <button className="self-start bg-white text-black px-4 py-2 rounded hover:bg-gray-100">
+              <button className="self-center bg-white text-black px-4 py-2 rounded hover:bg-gray-100">
                 {product.button}
               </button>
             </Link>
