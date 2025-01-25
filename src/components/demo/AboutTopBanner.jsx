@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../ui/button.jsx";
 const AboutTopBanner = () => {
   return (
@@ -35,7 +34,7 @@ const AboutTopBanner = () => {
         <div className="max-w-4xl mx-auto px-6 md:px-10">
           {/* Heading Section */}
           <div className="mb-6">
-            <h3 className="text-2xl md:text-3xl font-bold font-mono text-gray-800 text-center md:text-center">
+            <h3 className="text-xl md:text-3xl font-bold text-gray-800 text-justify md:text-center">
             We understand the importance of clean, pure, and healthy water for your well-being. That’s why our highly skilled team offers top-notch services across all major RO brands, including Aquaguard, Kent, HUL Pureit, Livpure, AO Smith, and many more.
             </h3>
             <span></span>
