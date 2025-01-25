@@ -11,7 +11,7 @@ const SpecificationFive = () => {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
+      <div className="flex flex-col lg:flex-col items-center lg:items-center gap-10 space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Image Section */}
         <div className="flex justify-center lg:w-1/2">
           <img

@@ -17,7 +17,7 @@ const SpecificationFour = ({ productDataFour }) => {
         <img
           src={productDataFour.image}
           alt={productDataFour.name}
-          className="w-full max-w-3xl h-auto object-contain rounded-lg shadow-xl transform transition-transform hover:scale-105"
+          className="w-full max-w-3xl h-auto object-contain rounded-lg shadow-xl transform transition-transform hover:scale-105 lg:size-[35rem]"
         />
       </div>
 
