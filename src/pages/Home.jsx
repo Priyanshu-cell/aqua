@@ -21,7 +21,7 @@ const Home = () => {
       <HomeClient2 />
       <AboutClient />
       {/* <HomeFandQ /> */}
-      {/* <GoogleReview /> */}
+      <GoogleReview />
     </>
   );
 };

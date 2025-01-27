@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Carousel,
   CarouselContent,
@@ -7,10 +6,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import img1 from "/google/pic-1.jpg";
-import img2 from "/google/pic-2.jpg";
-import img3 from "/google/pic-3.jpg";
-import img4 from "/google/pic-4.jpg";
+import img1 from "/google/pic-1.png";
+import img2 from "/google/pic-2.png";
+import img3 from "/google/pic-1.png";
+import img4 from "/google/pic-1.png";
 
 const GoogleReview = () => {
   const reviews = [
@@ -23,7 +22,7 @@ const GoogleReview = () => {
   return (
     <div className="bg-gradient-to-r from-[#DCEFFD] via-[#FFFFFF] to-[#FDE1E1] py-10 ">
       <div className="text-center text-3xl font-bold text-[#1B1F3B] mb-6">
-        Google Reviews By Our Satisfied Clients
+        Reviews By Our Satisfied Clients
       </div>
       {/* Carousel */}
       <div className="relative max-w-5xl mx-auto px-3">
@@ -45,12 +44,12 @@ const GoogleReview = () => {
                       alt={review.name}
                       className="w-full object-cover rounded-t-lg"
                     />
-                    <CardContent className="p-4">
+                    {/* <CardContent className="p-4">
                       <h3 className="text-xl font-semibold text-[#1B1F3B]">
                         {review.name}
                       </h3>
                       <p className="text-gray-600 mt-2">{review.text}</p>
-                    </CardContent>
+                    </CardContent> */}
                   </Card>
                 </div>
               </CarouselItem>
