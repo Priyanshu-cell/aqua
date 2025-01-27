@@ -1,5 +1,6 @@
 import AboutClient from "@/components/demo/AboutClient";
 import GoogleReview from "@/components/demo/GoogleReview";
+import HomeBanner from "@/components/demo/HomeBanner";
 import HomeClient2 from "@/components/demo/HomeClient2";
 import HomeClint from "@/components/demo/HomeClint";
 import HomeFandQ from "@/components/demo/HomeFandQ";
@@ -12,7 +13,8 @@ const Home = () => {
   return (
     <>
       <TopSection />
-      <SectionHero />
+      {/* <SectionHero /> */}
+      <HomeBanner />
       <HomeProducts />
       <WhyUs />
       <HomeClint />

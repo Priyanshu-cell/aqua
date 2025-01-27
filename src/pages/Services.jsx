@@ -1,15 +1,18 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import itemData from "../data/services.json";
 import { Link } from "react-router-dom";
+import { ServiceBanner } from "@/components/demo/ServiceBanner";
 
 const Services = () => {
   return (
+    <>
+    <ServiceBanner />
     <div className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-white py-2 md:py-10 px-4">
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-gold-400 to-yellow-500 text-transparent bg-clip-text">
           Our Premium Services
         </h2>
-        <p className="text-gray-400 text-sm md:text-base mt-2">
+        <p className="text-gray-400 text-xl font-bold mt-2">
           Explore our range of top-notch services tailored just for you.
         </p>
       </div>
@@ -38,6 +41,7 @@ const Services = () => {
       </div>
     
     </div>
+    </>
   );
 };
 
