@@ -16,6 +16,19 @@ const HomeClient2 = () => {
     { img: "/client-2/img-14.png", alt: "logo-14" },
     { img: "/client-2/img-15.png", alt: "logo-15" },
     { img: "/client-2/img-16.png", alt: "logo-16" },
+    
+    { img: "/client-2/img-17.png", alt: "logo-17" },
+    { img: "/client-2/img-18.jpeg", alt: "logo-16" },
+    { img: "/client-2/img-19.jpg", alt: "logo-16" },
+    { img: "/client-2/img-20.png", alt: "logo-16" },
+    { img: "/client-2/img-21.png", alt: "logo-16" },
+    { img: "/client-2/img-22.jpg", alt: "logo-16" },
+    { img: "/client-2/img-23.png", alt: "logo-16" },
+    { img: "/client-2/img-24.jpg", alt: "logo-16" },
+    { img: "/client-2/img-25.jpg", alt: "logo-16" },
+    { img: "/client-2/img-26.png", alt: "logo-16" },
+    { img: "/client-2/img-27.jpg", alt: "logo-16" },
+    { img: "/client-2/img-28.png", alt: "logo-16" },
   ];
   return (
     <div className="bg-white pb-12 pt-5">

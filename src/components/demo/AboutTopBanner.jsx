@@ -3,19 +3,15 @@ const AboutTopBanner = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center md:py-10 pt-7 pb-10 relative"
-        style={{ backgroundImage: "url('/aboutus/about-us-top.webp')" }}
-      >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
+        className="">
+        <img src="/aboutus/about-us-top.png" className="object-contain w-full">
+        </img>
+      
         {/* Main Content */}
         <div className="relative flex flex-col items-center text-center justify-center px-6 md:px-10 lg:px-20 pt-10md:py-10 font-mono">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About Us  "Shreeansh Aqua Solutions"
-          </h1>
+          
 
-          <p className="text-base md:text-xl text-gray-200 mb-6 max-w-3xl font-semibold">
+          <p className="text-lg md:text-xl text-black pt-4 mb-6 max-w-3xl font-semibold text-justify">
             Welcome to Shreeansh Aqua Solutions, the most trusted name in RO
             water purifier sales, service, and maintenance in Dehradun. With
             over 15 years of expertise, we specialize in providing complete

@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <div ref={chatBoxRef} className="sticky top-0 z-50 bg-[#E0FFFF] shadow-lg">
       <nav className="bg-[#F0F8FF] border-b-2 border-[#FFD700]">
-        <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto p-3">
+        <div className="max-w-screen-xl flex flex-wrap items-center align-middle justify-between mx-auto md:p-3 p-2">
           {/* Logo and Title */}
           <Link
             to="/"
@@ -45,13 +45,13 @@ const Header = () => {
           >
             <img
               src="/logo/RO2.jpg"
-              className="h-12 w-12 rounded-full border-2 border-[#FFD700]"
+              className="size-16 rounded-full border-2 border-[#FFD700]"
               alt="Company Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#2C3E50]">
               <div name="home" className="text-lg">
-                <span className="text-xl font-bold font">RO</span>{" "}
-                <span className="text-xl font-bold">HUB</span>
+                <span className="text-2xl md:text-3xl font-bold font">RO</span>{" "}
+                <span className="text-2xl md:text-3xl font-bold">HUB</span>
               </div>
             </span>
           </Link>
@@ -60,11 +60,11 @@ const Header = () => {
           <button
             onClick={() => setMenuOpen(!isMenuOpen)}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-[#2C3E50] rounded-lg md:hidden hover:bg-[#D4AF37] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
+            className="inline-flex items-center gap-2 p-2 w-auto h-10 justify-center text-[#2C3E50] rounded-lg md:hidden hover:bg-[#D4AF37] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
             aria-controls="navbar-dropdown"
             aria-expanded={isMenuOpen}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="text-lg font-medium">Menu</span>
             <svg
               className="w-5 h-5"
               aria-hidden="true"
@@ -109,10 +109,34 @@ const Header = () => {
               </li>
               <li>
                 <Link
+                  to="/products"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/home"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
+                >
+                  Reviews
                 </Link>
               </li>
               <li>
@@ -135,8 +159,7 @@ const Header = () => {
                         window.location.href = "tel:+917579008065";
                       }
                     }}
-                  >
-                  </a>
+                  ></a>
                 </div>
               </li>
             </ul>
@@ -144,11 +167,11 @@ const Header = () => {
         </div>
       </nav>
       <div className="bg-red-600 text-white py-2 overflow-hidden">
-      <div className="whitespace-nowrap animate-scroll text-sm md:text-lg font-medium">
-        Drink Healthy. Live Healthy. Choose <b>Shreeansh Aqua Solutions!</b> Phone:
-        +91-7579008065, Dehradun, Uttarakhand
+        <div className="whitespace-nowrap animate-scroll text-sm md:text-lg font-medium">
+          Drink Healthy. Live Healthy. Choose <b>Shreeansh Aqua Solutions!</b>{" "}
+          Phone: +91-7579008065, Dehradun, Uttarakhand
+        </div>
       </div>
-    </div>
     </div>
   );
 };

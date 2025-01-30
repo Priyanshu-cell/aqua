@@ -3,80 +3,165 @@ import React, { useState } from "react";
 const FandQ = () => {
   const faqs = [
     {
-      question: "What services do you offer at Shreeansh Aqua Solutions?",
-      answer:
-        "We specialize in:\nRO Water Purifier Repair & Service\nRO Water Purifier Installation\nRO AMC (Annual Maintenance Contracts)\nWater Softener Services\nHot & Cold RO Water Dispensers\nIndustrial, Commercial & Domestic Water Purifiers",
+      "question": "What is the best RO system for home use?",
+      "answer": "For home use, we recommend domestic RO water purifiers like Kent, Aquaguard, or customized RO systems based on your water quality. Our team provides installation, service, and AMC for all types of home RO systems."
     },
     {
-      question: "Why should I choose Shreeansh Aqua Solutions for my RO service in Dehradun?",
-      answer:
-        "✔️ 15+ Years of Experience\n✔️ Certified & Professional Technicians\n✔️ 100% Customer Satisfaction\n✔️ Affordable Pricing & AMC Packages\n✔️ Quick & Reliable Service",
+      "question": "Do you provide commercial RO plant installation?",
+      "answer": "Yes, we specialize in commercial RO plant installation for offices, schools, hotels, restaurants, and corporate buildings. We also offer maintenance, servicing, and filter replacement for commercial setups."
     },
     {
-      question: "How often should I get my RO water purifier serviced?",
-      answer:
-        "We recommend servicing your RO purifier every 3-6 months to ensure:\n\nProper removal of contaminants \nEfficient membrane and filter performance \nPrevention of clogging or water flow issues",
+      "question": "What is the price of a 50 LPH RO system?",
+      "answer": "The 50 LPH RO system price depends on the brand, membrane quality, and features. Contact us for a free consultation and the best quote. We also provide installation and service."
     },
     {
-      question: "What is an RO AMC, and why do I need it?",
-      answer:
-        "An Annual Maintenance Contract (AMC) ensures regular maintenance of your RO system throughout the year.\nBenefits of AMC: \nPeriodic filter changes\nRegular servicing to prevent breakdowns \nLong-term cost savings \nEnsures consistent water purity",
+      "question": "How often should I service my RO water purifier?",
+      "answer": "Regular RO maintenance is essential every 3 to 6 months to replace filters, membranes, and check pump efficiency. We offer AMC packages for hassle-free service."
     },
     {
-      question: "Do you provide water purifier installation services?",
-      answer:
-        "Yes! We provide professional RO water purifier installation services for: \nHomes \nOffices \nIndustries & Commercial Spaces \nOur technicians ensure the correct setup for maximum efficiency and longer lifespan of your purifier.",
+      "question": "What is the cost of an industrial RO plant?",
+      "answer": "The cost of an industrial RO plant varies based on capacity (500 LPH, 1000 LPH, 2000 LPH, etc.), filtration stages, and automation levels. Contact us for a customized quote and professional installation."
     },
     {
-      question: "How can I book an RO service with Shreeansh Aqua Solutions?",
-      answer:
-        "Booking an RO service is easy! \nCall Us: +91-7579008065 \nVisit Our Website: www.rohub.in \nService Area: Dehradun, Uttarakhand",
+      "question": "Do you provide water softener installation?",
+      "answer": "Yes, we provide whole-house water softener installation for homes, apartments, hotels, and industries. Our services include resin replacement, salt refilling, and system maintenance."
     },
     {
-      question: "Which RO brands do you service?",
-      answer:
-        "We provide service for all major RO brands, including: \nAquaguard \nKent \nHUL Pureit \nLivpure \nAO Smith \nAquafresh and more!",
+      "question": "What is the difference between RO water and soft water?",
+      "answer": "RO water removes TDS, heavy metals, and impurities, making it safe for drinking. Soft water removes hardness (calcium & magnesium) but retains minerals, making it better for skin, hair, and appliances. We provide both RO systems and water softeners for residential and commercial use."
     },
     {
-      question: "What should I do if my RO system stops working?",
-      answer:
-        "If your RO purifier stops working, you can: \nCheck the power supply. \nEnsure the water inlet is open. \nContact our service experts for a professional checkup. \nWe offer same-day service to get your RO running smoothly again!",
+      "question": "Do you offer AMC for commercial RO plants?",
+      "answer": "Yes, we provide Annual Maintenance Contracts (AMC) for commercial and industrial RO plants, covering filter replacements, membrane cleaning, and system servicing."
     },
     {
-      question: "How much does an RO service cost in Dehradun?",
-      answer:
-        "Our service charges are affordable and transparent. Pricing varies based on: \nType of Service: Repair, Installation, AMC \nRO Capacity & Brand \nSpare Parts Replacement (if needed) \nCall us now at +91-7579008065 for a free quote!",
+      "question": "What is the best filtration system for hard water?",
+      "answer": "For hard water, we recommend:\n- Water softeners for homes and industries\n- RO systems for drinking water\n- Multi-grade filters & activated carbon filters for commercial and industrial applications"
     },
     {
-      question: "Do you offer water softener services in Dehradun?",
-      answer:
-        "Yes, we specialize in water softener installation, repair, and maintenance to prevent hard water issues in your home or business.",
+      "question": "Do you provide spare parts for RO systems?",
+      "answer": "Yes, we supply RO spare parts like membranes, filters, pumps, cartridges, UV lamps, and pressure tanks for all brands and models."
     },
     {
-      question: "Can I get a customized AMC plan for my RO system?",
-      answer:
-        "Absolutely! We offer customized AMC packages tailored to your water usage and RO system capacity. Contact us for a personalized quote.",
+      "question": "How does a multi-grade filter (MGF) work?",
+      "answer": "A multi-grade filter (MGF) removes suspended particles, dirt, and turbidity using layers of sand and gravel. We offer installation, servicing, and media replacement for MGF systems."
     },
     {
-      question: "Is it necessary to use original spare parts for my RO system?",
-      answer:
-        "Yes, using genuine spare parts ensures: \nOptimal Performance \nLonger RO Lifespan \nConsistent Water Purity \nWe only use authentic spare parts during service.",
+      "question": "What are the benefits of an activated carbon filter?",
+      "answer": "An activated carbon filter removes chlorine, odors, organic impurities, and bad taste from water. We provide installation, media replacement, and maintenance."
     },
     {
-      question: "Do you provide same-day RO service in Dehradun?",
-      answer:
-        "Yes, we offer same-day service for most RO repair and maintenance needs in Dehradun and nearby areas.",
+      "question": "Do you provide hot and cold RO dispensers?",
+      "answer": "Yes, we supply and service hot and cold RO water dispensers for homes, offices, schools, and hotels, ensuring pure and temperature-controlled drinking water."
     },
     {
-      question: "How can I identify if my RO filter needs replacement?",
-      answer:
-        "Common signs include: \nReduced water flow \nChange in water taste or odor \nIndicator lights blinking (if available) \nWe recommend replacing filters every 6 months for optimal performance.",
+      "question": "How can I book RO service in Dehradun?",
+      "answer": "You can book an RO service in Dehradun by calling us, visiting our website www.rohub.in, or filling out our online service request form."
     },
     {
-      question: "What areas do you serve apart from Dehradun?",
-      answer:
-        "We primarily serve Dehradun, but also cover nearby areas in Uttarakhand and adjoining states. Contact us for specific service locations.",
+      "question": "Why choose Shreeansh Aqua Solutions for RO services?",
+      "answer": "15+ years of experience in the water purification industry\n- Expert technicians for installation & servicing\n- Affordable pricing & genuine spare parts\n- Quick response & doorstep service"
+    }, 
+    {
+      "question": "How does a UV water purifier work?",
+      "answer": "A UV water purifier uses ultraviolet light to kill bacteria, viruses, and microorganisms without altering the taste or minerals of water. We offer UV purifier installation and maintenance services."
     },
+    {
+      "question": "What is a TDS controller in an RO system?",
+      "answer": "A TDS controller adjusts the Total Dissolved Solids (TDS) level in purified water by mixing some filtered water with RO-purified water to retain essential minerals. We provide RO systems with TDS control settings."
+    },
+    {
+      "question": "Do you provide alkaline RO water purifiers?",
+      "answer": "Yes, we offer alkaline RO water purifiers that maintain a pH level of 7 to 9, making the water healthier and better for digestion."
+    },
+    {
+      "question": "What is the maintenance cost of an RO plant?",
+      "answer": "The RO plant maintenance cost depends on capacity, usage, and filter replacement frequency. We provide affordable AMC plans for commercial and industrial RO plants."
+    },
+    {
+      "question": "How do I check the TDS level of my water?",
+      "answer": "You can use a TDS meter to check the water quality at home. If the TDS is above 500 ppm, you need an RO system. We offer free water testing services to suggest the best purification solution."
+    },
+    {
+      "question": "Which RO plant is best for schools and colleges?",
+      "answer": "For schools and colleges, we recommend 250 LPH to 1000 LPH RO plants with UV and UF filtration to ensure safe drinking water for students and staff."
+    },
+    {
+      "question": "What is the best RO system for a restaurant or hotel?",
+      "answer": "Hotels and restaurants require high-capacity RO plants like 100 LPH, 250 LPH, or 500 LPH systems to provide safe, purified water for cooking and drinking."
+    },
+    {
+      "question": "What is the best water purification solution for factories?",
+      "answer": "Factories require industrial RO plants with capacities of 1000 LPH, 2000 LPH, or more, depending on water usage and industry type. We provide customized RO plant installations for factories."
+    },
+    {
+      "question": "Can I use borewell water in an RO system?",
+      "answer": "Yes, but borewell water usually has high TDS and hardness, so you may need a pre-treatment system like a water softener before RO purification. We provide free water testing and the right purification setup."
+    },
+    {
+      "question": "How does a dual-membrane RO system work?",
+      "answer": "A dual-membrane RO system has two RO membranes for higher efficiency and faster purification, making it ideal for commercial and industrial applications."
+    },
+    {
+      "question": "What is the difference between UF, UV, and RO water purifiers?",
+      "answer": "UF (Ultrafiltration): Removes bacteria & dirt but not dissolved salts. Best for low-TDS water.\nUV (Ultraviolet): Kills viruses & bacteria but does not remove TDS.\nRO (Reverse Osmosis): Removes TDS, heavy metals, and contaminants, making water completely safe.\nWe provide all types of water purification systems based on water quality."
+    },
+    {
+      "question": "Do you offer doorstep RO repair services?",
+      "answer": "Yes, we provide doorstep RO repair, filter replacement, and servicing in Dehradun and nearby areas."
+    },
+    {
+      "question": "How can I reduce water wastage in an RO system?",
+      "answer": "RO systems waste some water during purification. You can reduce waste by reusing rejected water for cleaning, gardening, or using a zero-waste RO system."
+    },
+    {
+      "question": "Do you provide commercial RO plant AMC services?",
+      "answer": "Yes, we offer Annual Maintenance Contracts (AMC) for commercial and industrial RO plants, covering filter replacements, chemical cleaning, and regular check-ups."
+    },
+    {
+      "question": "How long does an RO membrane last?",
+      "answer": "An RO membrane typically lasts 1 to 2 years, depending on water quality and usage. Regular maintenance extends its life. We provide genuine RO membrane replacements."
+    },
+    {
+      "question": "Do you install industrial RO plants with automatic operation?",
+      "answer": "Yes, we provide fully automatic industrial RO plants with PLC control panels and remote monitoring for factories, manufacturing units, and industries."
+    },
+    {
+      "question": "How does a sand filter work in water purification?",
+      "answer": "A sand filter removes suspended particles, dirt, and turbidity, making it useful for pre-treatment before RO plants. We offer sand filter installation and servicing."
+    },
+    {
+      "question": "Do you provide water quality testing services?",
+      "answer": "Yes, we offer free water quality testing to check TDS, hardness, and contaminants, helping customers choose the right purification system."
+    },
+    {
+      "question": "What are the benefits of an iron removal filter?",
+      "answer": "An iron removal filter removes iron, manganese, and rust particles, preventing yellow stains and bad taste in water. Ideal for borewell and municipal water supply."
+    },
+    {
+      "question": "How can I increase the life of my RO system?",
+      "answer": "- Regular filter and membrane replacement\n- Periodic servicing and cleaning\n- Using pre-filters for sediment removal\nWe offer professional RO servicing to ensure long-lasting performance."
+    },
+    {
+      "question": "Do you provide wastewater treatment solutions?",
+      "answer": "Yes, we offer Effluent Treatment Plants (ETP) and Sewage Treatment Plants (STP) for industries, hotels, and large establishments."
+    },
+    {
+      "question": "What is the cost of a 1000 LPH RO plant?",
+      "answer": "The cost depends on components, filtration stages, and automation level. Contact us for a custom quote and professional installation."
+    },
+    {
+      "question": "Do you provide RO system installation outside Dehradun?",
+      "answer": "Yes, we provide RO system sales, installation, and servicing across Uttarakhand and nearby states."
+    },
+    {
+      "question": "What is the warranty period for your RO systems?",
+      "answer": "Our RO systems come with a standard warranty on parts and service. We also offer extended warranty plans."
+    },
+    {
+      "question": "Why is my RO system not working properly?",
+      "answer": "Common reasons include clogged filters, faulty membrane, low water pressure, or pump failure. We offer quick troubleshooting and repair services."
+    }
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -87,7 +172,7 @@ const FandQ = () => {
 
   return (
     <div className="bg-gray-50 py-10 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
           Frequently Asked Questions (FAQs)
@@ -103,7 +188,7 @@ const FandQ = () => {
             >
               <h4 className="text-xl font-bold text-gray-800 flex justify-between items-center">
                 {faq.question}
-                <span className="text-gray-500">
+                <span className="text-gray-500 md:text-3xl">
                   {activeIndex === index ? "−" : "+"}
                 </span>
               </h4>
@@ -112,7 +197,7 @@ const FandQ = () => {
                   activeIndex === index ? "max-h-screen" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-700 whitespace-pre-line mt-2">
+                <p className="text-gray-700 whitespace-pre-line mt-2 md:text-xl">
                   {faq.answer}
                 </p>
               </div>

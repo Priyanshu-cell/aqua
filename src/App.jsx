@@ -20,6 +20,7 @@ import IndustrialRo from "./components/demo/IndustrialRo";
 import WaterSoftener from "./components/demo/WaterSoftener";
 import WhatsAppWidget from "./components/demo/WhatsAppWidget";
 import PhoneIcon from "./components/demo/PhoneIcon";
+import ServicesDetailsPage from "./pages/ServicesDetailsPage";
 
 function App() {
   return (
@@ -30,7 +31,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/products" element={<Services />} />
+        <Route path="/services" element={<ServicesDetailsPage />} />
+
         
         <Route path="/water-purifier" element={<WaterPurifier />} />
         <Route path="/domestic-ro" element={<DomesticRo />} />
