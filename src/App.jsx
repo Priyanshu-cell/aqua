@@ -1,4 +1,6 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "./components/demo/Footer";
 import Header from "./components/demo/Header";
 import {
