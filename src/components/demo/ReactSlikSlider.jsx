@@ -18,7 +18,7 @@ const ReactSlikSlider = () => {
 
   return (
     <>
-    <div className="w-full mx-auto mt-1 px-0 pb-10">
+    <div className="w-full mx-auto mt-1 px-0 pb-10 overflow-hidden">
       <div className="relative">
         <Slider {...settings}>
           {[1,2,3].map((num) => (
