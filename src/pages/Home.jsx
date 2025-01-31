@@ -5,7 +5,7 @@ import HomeClient2 from "@/components/demo/HomeClient2";
 import HomeClint from "@/components/demo/HomeClint";
 import HomeFandQ from "@/components/demo/HomeFandQ";
 import HomeProducts from "@/components/demo/HomeProducts";
-import { SectionHero } from "@/components/demo/SectionHero.jsx";
+// import { SectionHero } from "@/components/demo/SectionHero.jsx";
 import TopSection from "@/components/demo/TopSection.jsx";
 import TrustedWaterSection from "@/components/demo/TrustedWaterSection";
 import WhyUs from "@/components/demo/WhyUs";
