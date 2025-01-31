@@ -161,6 +161,86 @@ const FandQ = () => {
     {
       "question": "Why is my RO system not working properly?",
       "answer": "Common reasons include clogged filters, faulty membrane, low water pressure, or pump failure. We offer quick troubleshooting and repair services."
+    },
+    {
+      "question": "Do you provide service for Kent RO water purifiers?",
+      "answer": "Yes, we provide Kent RO service, repair, and AMC for all models, including Kent Grand, Kent Pearl, Kent Supreme, Kent Prime Plus, and Kent Elite."
+    },
+    {
+      "question": "Can you repair Aquaguard water purifiers?",
+      "answer": "Yes, we offer Aquaguard RO repair and maintenance for models like Aquaguard Geneus, Aquaguard Magna, Aquaguard Enhance, and Aquaguard Reviva."
+    },
+    {
+      "question": "Do you provide Livpure RO service?",
+      "answer": "Yes, we provide Livpure RO filter replacement, servicing, and installation for models such as Livpure Glo, Livpure Pep Pro Plus, and Livpure Envy."
+    },
+    {
+      "question": "Is Blue Star RO repair service available?",
+      "answer": "Yes, we repair and maintain Blue Star RO systems, including Blue Star Stella, Blue Star Prisma, Blue Star Imperia, and Blue Star Aristo."
+    },
+    {
+      "question": "Do you service Havells RO water purifiers?",
+      "answer": "Yes, we provide Havells RO servicing for models like Havells Max, Havells Digitouch, Havells Fab, and Havells UTC RO."
+    },
+    {
+      "question": "Can you repair HUL Pureit RO systems?",
+      "answer": "Yes, we offer HUL Pureit RO repair and filter change services for models like Pureit Ultima, Pureit Classic, Pureit Copper+, and Pureit Marvella."
+    },
+    {
+      "question": "Do you provide service for AO Smith RO purifiers?",
+      "answer": "Yes, we service AO Smith RO purifiers, including AO Smith Z8, AO Smith Z9, AO Smith X8, and AO Smith Intelli UV+."
+    },
+    {
+      "question": "Can I get Eureka Forbes RO service at home?",
+      "answer": "Yes, we provide doorstep Eureka Forbes RO service and AMC for models such as Aquaguard Aura, Aquaguard Blaze, and Dr. Aquaguard Nrich."
+    },
+    {
+      "question": "Do you repair LG RO water purifiers?",
+      "answer": "Yes, we repair LG RO purifiers like LG WW182EP, LG WW151NP, and LG Puricare RO systems."
+    },
+    {
+      "question": "Is Tata Swach RO service available?",
+      "answer": "Yes, we offer Tata Swach RO repair and maintenance for models like Tata Swach Ultima Silver, Tata Swach Nova, and Tata Swach Cristella."
+    },
+    {
+      "question": "Can you service Nasaka RO water purifiers?",
+      "answer": "Yes, we provide Nasaka RO filter replacement and AMC for models like Nasaka Tulip, Nasaka Max Sure, and Nasaka Cosmos."
+    },
+    {
+      "question": "Do you repair Panasonic RO systems?",
+      "answer": "Yes, we repair and maintain Panasonic RO models like Panasonic TK-CS43 and Panasonic TK-CS80."
+    },
+    {
+      "question": "Do you provide repair services for Whirlpool RO water purifiers?",
+      "answer": "Yes, we repair Whirlpool RO purifiers, including Whirlpool Minerala Platinum, Whirlpool Purasense, and Whirlpool Destroyer."
+    },
+    {
+      "question": "Can I get Voltas RO service and filter change?",
+      "answer": "Yes, we provide Voltas RO repair and filter replacement for models such as Voltas Pure, Voltas Grand, and Voltas Maximus."
+    },
+    {
+      "question": "Do you service Sunpure RO systems?",
+      "answer": "Yes, we offer Sunpure RO repair and installation for all models."
+    },
+    {
+      "question": "Do you provide repair and servicing for local RO brands?",
+      "answer": "Yes, we service all local and unbranded RO purifiers, including custom-built RO systems, wall-mounted RO, under-sink RO, and commercial RO plants."
+    },
+    {
+      "question": "What is the cost of RO filter replacement for different brands?",
+      "answer": "The cost depends on the brand and model. We provide genuine RO filters, membranes, and spare parts at affordable prices for all brands."
+    },
+    {
+      "question": "Do you provide RO AMC services for all brands?",
+      "answer": "Yes, we offer Annual Maintenance Contracts (AMC) for Kent, Aquaguard, Pureit, AO Smith, Blue Star, Livpure, Havells, and all local RO brands."
+    },
+    {
+      "question": "Can I book an RO service online for any brand?",
+      "answer": "Yes, you can book an RO service online through our website www.rohub.in or call us for quick doorstep service."
+    },
+    {
+      "question": "Do you provide spare parts and accessories for all RO brands?",
+      "answer": "Yes, we sell and install RO filters, membranes, pumps, UV lamps, TDS controllers, and SMPS adapters for all brands."
     }
   ];
 

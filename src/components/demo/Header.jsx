@@ -109,7 +109,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="/products"
+                  to="/home"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   Products

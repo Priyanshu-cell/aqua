@@ -6,7 +6,7 @@ const IndustrialRoOne = ({ firstData }) => {
       </h2>
 
       {/* Product Image and Specifications Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {/* Product Image */}
         <div className="flex justify-center items-center">
           <img

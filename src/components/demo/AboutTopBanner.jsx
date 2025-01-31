@@ -8,10 +8,10 @@ const AboutTopBanner = () => {
         </img>
       
         {/* Main Content */}
-        <div className="relative flex flex-col items-center text-center justify-center px-6 md:px-10 lg:px-20 pt-10md:py-10 font-mono">
+        <div className="relative flex flex-col items-center text-center justify-center px-6 md:px-10 lg:px-20 pt-10md:py-10 bg-gray-200">
           
 
-          <p className="text-lg md:text-xl text-black pt-4 mb-6 max-w-3xl font-semibold text-justify">
+          <p className="text-lg md:text-xl text-black pt-4 mb-6 max-w-3xl font-semibold text-justify ">
             Welcome to Shreeansh Aqua Solutions, the most trusted name in RO
             water purifier sales, service, and maintenance in Dehradun. With
             over 15 years of expertise, we specialize in providing complete
@@ -26,7 +26,7 @@ const AboutTopBanner = () => {
         </div>
       </div>
 
-      <div className="bg-gray-200 text-gray-700 py-10">
+      <div className="bg-slate-300 text-gray-700 py-10">
         <div className="max-w-4xl mx-auto px-6 md:px-10">
           {/* Heading Section */}
           <div className="mb-6">
