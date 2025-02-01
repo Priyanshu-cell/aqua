@@ -9,9 +9,10 @@ const AboutUs = () => {
     <>
       <AboutTopBanner />
       <AboutWhyUs />
-      <OurTeam />
-      <AboutClient /> 
       <AboutServices />
+      {/* <OurTeam /> */}
+      <AboutClient /> 
+      
       <FandQ />
     </>
   );

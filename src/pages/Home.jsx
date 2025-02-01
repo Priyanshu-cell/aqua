@@ -11,14 +11,16 @@ import TrustedWaterSection from "@/components/demo/TrustedWaterSection";
 import WhyUs from "@/components/demo/WhyUs";
 import ReactSlikSlider from "../components/demo/ReactSlikSlider";
 import LeftRightBox from "@/components/demo/LeftRightBox";
+import HomeNewBanner from "@/components/demo/HomeNewBanner";
 
 const Home = () => {
   return (
     <>
       <TopSection />
       {/* <SectionHero /> */}
-      <ReactSlikSlider />
+      {/* <ReactSlikSlider /> */}
       {/* <HomeBanner /> */}
+      <HomeNewBanner />
       <LeftRightBox />
 
       <TrustedWaterSection />

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element } from "react-scroll";
 
 const FandQ = () => {
   const faqs = [
@@ -251,7 +252,7 @@ const FandQ = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-10 px-6">
+    <Element name="faqs" className="bg-gray-50 py-10 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
@@ -285,7 +286,7 @@ const FandQ = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

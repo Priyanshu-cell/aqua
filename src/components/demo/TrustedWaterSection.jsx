@@ -56,9 +56,9 @@ const TrustedWaterSection = () => {
             <p className="text-gray-700 mt-3">{feature.description}</p>
 
             {/* Read More Link */}
-            <div className="mt-5">
+            <div className="mt-5" >
               <a
-                href="#"
+                href="/services"
                 className="text-blue-600 font-medium hover:text-blue-700 transition"
               >
                 Read More →

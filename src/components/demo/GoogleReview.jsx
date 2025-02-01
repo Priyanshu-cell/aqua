@@ -10,6 +10,7 @@ import img1 from "/google/pic-1.png";
 import img2 from "/google/pic-2.png";
 import img3 from "/google/pic-1.png";
 import img4 from "/google/pic-1.png";
+import { Element } from "react-scroll";
 
 const GoogleReview = () => {
   const reviews = [
@@ -20,7 +21,7 @@ const GoogleReview = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#DCEFFD] via-[#FFFFFF] to-[#FDE1E1] py-10 ">
+    <Element name="reviews" className="bg-gradient-to-r from-[#DCEFFD] via-[#FFFFFF] to-[#FDE1E1] py-10 ">
       <div className="text-center text-3xl font-bold text-[#1B1F3B] mb-6">
         Reviews By Our Satisfied Clients
       </div>
@@ -64,7 +65,7 @@ const GoogleReview = () => {
           </CarouselNext>
         </Carousel>
       </div>
-    </div>
+      </Element>
   );
 };
 

@@ -9,7 +9,8 @@ const AboutServices = () => {
           Our Services
         </h2>
         <p className="text-gray-600 text-lg">
-          We provide reliable and professional services to ensure the best performance of your water purifiers.
+          We provide reliable and professional services to ensure the best
+          performance of your water purifiers.
         </p>
       </div>
 
@@ -55,15 +56,42 @@ const AboutServices = () => {
         ))}
       </div>
 
+      <div className="bg-gray-100 mt-12 py-8 px-6 rounded-lg shadow-lg max-w-5xl mx-auto">
+        <h3 className="text-3xl font-bold text-center text-green-700 mb-6">
+          Areas We Serve
+        </h3>
+        <p className="text-gray-800 text-xl leading-relaxed text-justify">
+          We provide water purification solutions in Dehradun and nearby
+          locations, including
+          <span className="font-semibold">
+            {" "}
+            Rajpur Road, Sahastradhara Road, Dalanwala, Prem Nagar, Vikasnagar,
+            Rishikesh, Haridwar, and Mussoorie.
+          </span>
+        </p>
+      </div>
+
+      <div className="bg-gray-100 mt-12 py-8 px-6 rounded-lg shadow-lg max-w-5xl mx-auto">
+        <h3 className="text-3xl font-bold text-center text-green-700 mb-6">
+          Our Commitment to Pure Water
+        </h3>
+        <p className="text-gray-800 text-xl leading-relaxed text-justify">
+          At Shreeansh Aqua Solutions, we believe that clean and safe drinking
+          water is a necessity. That’s why we bring the best RO systems, water
+          softeners, and purification plants to ensure that your water is 100%
+          safe, mineral-rich, and contaminant-free
+        </p>
+      </div>
+
       {/* Importance of RO Service */}
       <div className="bg-gray-100 mt-12 py-8 px-6 rounded-lg shadow-lg max-w-5xl mx-auto">
-        <h3 className="text-3xl font-semibold text-center text-green-700 mb-6">
+        <h3 className="text-2xl font-semibold text-center text-green-700 mb-6">
           Why Regular RO Service is Important?
         </h3>
         <p className="text-gray-800 text-lg leading-relaxed text-justify">
           RO water purifiers work continuously to remove impurities and deliver
-          safe, healthy drinking water. Over time, filters and membranes can
-          get clogged, affecting water quality. Regular service ensures:
+          safe, healthy drinking water. Over time, filters and membranes can get
+          clogged, affecting water quality. Regular service ensures:
         </p>
         <ul className="list-disc list-inside space-y-4 mt-4 text-gray-800">
           <li>Proper removal of contaminants and impurities</li>

@@ -10,6 +10,7 @@ const ServicesDetailsPage = () => {
 
   return <>
     <ServicesDetails />
+    <RoServiceBrands />
     <div className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 shadow-2xl rounded-lg p-8 md:p-12 lg:p-16 space-y-8 text-center text-white">
   {/* Heading */}
   <h2 className="text-3xl sm:text-4xl font-extrabold tracking-wide">
@@ -56,7 +57,7 @@ const ServicesDetailsPage = () => {
 </div>
 
 
-    <RoServiceBrands />
+    
   </>;
 };
 

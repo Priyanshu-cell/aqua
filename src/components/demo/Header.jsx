@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "./CustomLink";
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -109,19 +110,20 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="/home"
+                  to="/products"
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   Products
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
+              <Link
+                  to="/faqs"
+                  
                   className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
                 >
                   FAQs
-                </Link>
+                  </Link>
               </li>
               <li>
                 <Link
@@ -132,12 +134,13 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/home"
-                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3"
+                <CustomLink
+                  to="/"
+                  scrollTo="reviews"
+                  className="block py-2 px-3 text-[#2C3E50] rounded hover:bg-[#FFD700] md:hover:bg-transparent md:border-0 md:hover:text-[#32CD32] md:p-0 transition duration-300 md:pt-3  cursor-pointer"
                 >
                   Reviews
-                </Link>
+                </CustomLink>
               </li>
               <li>
                 <Link

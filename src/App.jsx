@@ -23,6 +23,7 @@ import WaterSoftener from "./components/demo/WaterSoftener";
 import WhatsAppWidget from "./components/demo/WhatsAppWidget";
 import PhoneIcon from "./components/demo/PhoneIcon";
 import ServicesDetailsPage from "./pages/ServicesDetailsPage";
+import FandQ from "./components/demo/FandQ";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<Services />} />
         <Route path="/services" element={<ServicesDetailsPage />} />
+        <Route path="/faqs" element={<FandQ />} />
+        
 
         
         <Route path="/water-purifier" element={<WaterPurifier />} />
