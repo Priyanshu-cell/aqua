@@ -31,7 +31,7 @@ const HomeNewBanner = () => {
       </div>
 
       {/*img */}
-      <div className="absolute left-auto top-28 md:left-auto  md:right-60 md:top-8 m-2 border-4 md:border-8 border-gray-300 rounded-lg shadow-lg">
+      <div className="absolute left-auto top-28 md:left-auto  md:right-30 md:top-8 m-2 border-4 md:border-8 border-gray-300 rounded-lg shadow-lg">
         <img
           src="/Home/main.png"
           className="h-auto md:h-[700px] border border-gray-400 rounded-lg"
