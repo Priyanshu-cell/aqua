@@ -14,7 +14,7 @@ const HomeNewBanner = () => {
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Content Positioned to Top-Left */}
-      <div className="absolute top-1 left-2 md:top-10 md:left-10 z-10 text-white">
+      <div className="absolute top-1 left-2 md:top-10 md:left-6 z-10 text-white">
         <h1 className="text-3xl md:text-5xl font-bold">ROHUB</h1>
         <p className="text-xl md:text-2xl mt-2 font-bold font-serif bg-slate-800">
           Shreeansh Aqua Solutions
@@ -23,7 +23,7 @@ const HomeNewBanner = () => {
 
       {/*company content */}
 
-      <div className="hidden md:block absolute top-10 left-2 md:top-44 md:left-10 z-10 text-white">
+      <div className="hidden md:block absolute top-10 left-2 md:top-44 md:left-6 z-10 text-white">
         <h1 className="text-3xl md:text-5xl font-bold text-slate-200">Innovative Water Treatment <br/>Solutions For You</h1>
         <p className="text-xl md:text-2xl mt-10 font-bold font-serif bg-slate-800 p-4 text-justify max-w-lg">
         Founded in 2007, we offer comprehensive water purification solutions—from concept through commissioning and maintenance— ensuring unmatched quality, efficiency, and customer satisfaction
@@ -31,7 +31,7 @@ const HomeNewBanner = () => {
       </div>
 
       {/*img */}
-      <div className="absolute left-auto top-28 md:left-auto  md:right-30 md:top-8 m-2 border-4 md:border-8 border-gray-300 rounded-lg shadow-lg">
+      <div className="absolute left-auto top-28 md:left-auto  md:right-8 md:top-8 m-2 border-4 md:border-8 border-gray-300 rounded-lg shadow-lg">
         <img
           src="/Home/main.png"
           className="h-auto md:h-[700px] border border-gray-400 rounded-lg"
